@@ -51,6 +51,7 @@ export const aboutUs = {
     },
     whatWeHave: {
         title: "What We Have?",
+        content2: "The EusoTrip Solution: Revolutionizing HazMat Logistics",
         imageBlock: [
             {
                 imageSrc: './wwh-group-1-image-1.png',

@@ -10,8 +10,8 @@ function CarrierSection() {
     <>
     <div className="bg-contain bg-center bg-no-repeat h-screen w-screen relative bg-[url(../public/carrier-bg.png)] h-2/3 flex md:items-center about-us-header-container">
       <div className="w-250px flex flex-col ml-0 about-us-header carrie-header">
-        <span className="text-white text-64px font-normal leading-80px font-Codec-Cold-Trial label-codec">Carrier<br/></span>
-        <span className="text-24px leading-80px font-Codec-Cold-Trial hazmat-label">Dispatcher  | Company Carrier | Individual Carrier</span>
+        <span className="text-white text-64px font-normal leading-80px font-Codec-Cold-Trial label-codec gradient-label">Carrier<br/></span>
+        <span className="text-24px leading-80px font-Codec-Cold-Trial normal-font">Dispatcher  | Company Carrier | Individual Carrier</span>
       </div>
     </div> 
     <div className="flex flex-col p-10 w-full bg-black">

@@ -1,7 +1,7 @@
 import React from "react";
 import ContentHeader from "./ContentHeader";
 
-function ContentBlockWithImage({ title, text, image }) {
+function ContentBlockWithImage({ title, text, image, classes, commonPadding = "p-4" }) {
   const formattedText = text.split('\n').map((item, index) => (
     <React.Fragment key={index}>
       {item}
@@ -10,7 +10,7 @@ function ContentBlockWithImage({ title, text, image }) {
   ));
   return (
     <>
-      <div className=" w-full md:w-1/2 p-4 justify-center items-center">
+      <div className={`w-full md:w-1/2 ${commonPadding} justify-center items-center`}>
         <ContentHeader additionClass="text-left" header={title}/>
         <br />
         <div className="flex items-center">
@@ -19,11 +19,11 @@ function ContentBlockWithImage({ title, text, image }) {
               </div>
         </div>
       </div>
-      <div className=" w-full md:w-1/2 p-4 justify-center items-center">
+      <div className={`w-full md:w-1/2 ${commonPadding} justify-center items-center`}>
         <img
             src={image.src}
             alt={image.alt}
-            className="h-full w-full object-cover"
+            className={classes ? classes : "h-full w-full object-cover" }
           />
       </div>
     </>

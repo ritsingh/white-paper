@@ -26,7 +26,8 @@ function Header() {
         <div
       className={
         scroll
-          ? "lg:w-4/5 xl:w-3/5 hidden lg:flex xl:flex fixed bottom-5vh items-center justify-between px-4 z-50 bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg shadow-lg menu"
+          // ? "lg:w-4/5 xl:w-3/5 hidden lg:flex xl:flex fixed bottom-5vh items-center justify-between px-4 z-50 bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg shadow-lg menu"
+          ? "lg:w-4/5 xl:w-3/5 hidden lg:flex xl:flex fixed bottom-5vh items-center justify-between px-4 z-50 bg-opacity-20 backdrop-blur-lg drop-shadow-lg shadow-lg menu"
           : "lg:w-4/5 xl:w-3/5 hidden lg:flex xl:flex items-center justify-between px-4 z-50 fixed bottom-5vh menu"
       }
     >
@@ -44,7 +45,7 @@ function Header() {
             <Link
               to={"/"}
               onClick={() => setSelectedMenu(0)}
-              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg font-semibold  before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
+              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg  before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
             >
               <span className="">About Us</span>
               { selectedMenu === 0 ? 
@@ -58,7 +59,7 @@ function Header() {
             <Link
               to={"/carrier"}
               onClick={() => setSelectedMenu(1)}
-              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg font-semibold before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
+              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
             >
               <span className="">Carrier</span>
               { selectedMenu === 1 ? 
@@ -71,7 +72,7 @@ function Header() {
             <Link
               // to={"/projects"}
               onClick={() => setSelectedMenu(2)}
-              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg font-semibold before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
+              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg  before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
             >
               <span className="">Esang</span>
               { selectedMenu === 2 ? 
@@ -84,7 +85,7 @@ function Header() {
             <Link
               // to={"/resume"}
               onClick={() => setSelectedMenu(3)}
-              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg font-semibold before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
+              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
             >
               <span className="">Shipper</span>
               { selectedMenu === 3 ? 
@@ -97,7 +98,7 @@ function Header() {
             <Link
               // to={"/resume"}
               onClick={() => setSelectedMenu(4)}
-              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg font-semibold before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
+              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
             >
               <span className="">Bussines Overview</span>
               { selectedMenu === 4 ? 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
@@ -10,15 +10,27 @@ import BusinessOverview from "./pages/BusinessOverview";
 function App() {
   return (
     <div className="bg-black from-slate-900 via-purple-900 to-slate-900">
-      <Header />
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/carrier" element={<Carrier />} />
-        <Route path="/shipper" element={<Shipper />} />
-        <Route path="/esang" element={<Esang />} />
-        <Route path="/business-overview" element={<BusinessOverview />} />
-      </Routes>
+      <img
+        src="./header-img.png"
+        alt="image 1"
+        className="header-logo p-10"
+      />
+      <img
+        src="./side-float.png"
+        alt="image 1"
+        className="side-float"
+      />
+      <Router>
+        <Header />
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route exact path="/carrier" element={<Carrier />} />
+          <Route exact path="/shipper" element={<Shipper />} />
+          <Route exact path="/esang" element={<Esang />} />
+          <Route exact path="/business-overview" element={<BusinessOverview />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

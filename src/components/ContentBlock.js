@@ -1,9 +1,9 @@
 import React from "react";
 
-function ContentBlock({ text }) {
+function ContentBlock({ text, w= "w-[1590px]" }) {
   return (
-    <div className="flex items-center">
-          <div className="w-[1590px] content">
+    <div className="flex items-center w-full">
+          <div className={`${w} content`}>
             <p>{text}</p>
           </div>
     </div>
