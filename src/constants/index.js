@@ -334,3 +334,53 @@ export const shipper = {
           }
     }
 }
+
+export const esang = {
+    title: 'Esang',
+    subTitle: 'Esang AI: The Heart of Optimization',
+    header: {
+        content:'EusoTrip leverages a suite of cutting-edge technologies to revolutionize the HazMat logistics industry. This technological edge ensures a seamless, efficient, and safe experience for all stakeholder'
+    },
+    contentBlock1: [
+        {
+            title: 'Benefit (All Users)',
+            content: 'Specialized routing algorithms powered by Esang AI factor in real-time data and the latest HazMat regulations, ensuring safe, compliant, and fuel-efficient routes. This minimizes delays, fines, fuel costs, and maximizes earnings for carriers. Optimized routing can cut fuel costs by up to 15% and reduce transit times by 10-15%​ (Fleet Point)​​ (The Logistics Point)'
+        },
+        {
+            title: 'Core Innovation',
+            content: ' At its core, EusoTrip features Esang AI, a proprietary artificial intelligence engine, meticulously crafted to navigate the complexities of HazMat logistics. This advanced AI is pivotal in transforming logistics operations by offering more than just route optimization.'
+        },
+        {
+            title: 'Comprehensive Data Analysis',
+            content: 'Esang AI processes extensive real-time and historical data encompassing route restrictions, traffic patterns, carrier capabilities, and evolving HazMat regulations. This enables a holistic approach to logistics management.'
+        },
+    ],
+    contentBlock2: [
+        {
+            title: 'Intelligent Load Matching',
+            content: 'Beyond simple compatibility, it strategically matches carriers with loads to maximize logistical efficiency and minimize empty miles.'
+        },
+        {
+            title: 'Compliance and Delay Avoidance',
+            content: 'With a proactive stance, Esang AI foresees potential delays and compliance risks, facilitating preemptive measures to mitigate these issues effectively.'
+        },
+        {
+            title: 'Dynamic Route Optimization',
+            content: 'Esang AI ensures the selection of the most efficient routes by continuously assessing current road conditions and legal restrictions.'
+        },
+    ],
+    imageBlock: [
+        {
+            imageSrc: './shipper-image-3.png',
+            imageAlt: 'Image 3',
+        },
+        {
+            imageSrc: './shipper-image-4.png',
+            imageAlt: 'Image 4',
+        }
+    ],
+    content1: 'Esang AI ensures the selection of the most efficient routes by continuously assessing current road conditions and legal restrictions.',
+    esangDesignBlock: {
+        header: 'Esang System Design'
+    }
+}
