@@ -70,7 +70,7 @@ function Header() {
           </li>
           <li className={ `border-r border-gray-500 lg:pr-5 relative group w-max ${selectedMenu === 2 ? 'hazmat-label' : ''}`}>
             <Link
-              // to={"/projects"}
+              // to={"/"}
               onClick={() => setSelectedMenu(2)}
               className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg  before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
             >
@@ -83,7 +83,7 @@ function Header() {
           </li>
           <li className={ `border-r border-gray-500 lg:pr-5 relative group w-max ${selectedMenu === 3 ? 'hazmat-label' : ''}`}>
             <Link
-              // to={"/resume"}
+              to={"/shipper"}
               onClick={() => setSelectedMenu(3)}
               className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
             >
@@ -96,7 +96,7 @@ function Header() {
           </li>
           <li className={ `relative group w-max ${selectedMenu === 4 ? 'hazmat-label' : ''}`}>
             <Link
-              // to={"/resume"}
+              // to={"/"}
               onClick={() => setSelectedMenu(4)}
               className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
             >
