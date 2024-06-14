@@ -1,5 +1,5 @@
 import React from "react";
-import CarrierSection from "../components/CarrierSection";
+import CarrierSection from "../components/ShipperCarrierSection";
 
 function Esang() {
   return (

@@ -1,10 +1,11 @@
 import React from "react";
-import CarrierSection from "../components/CarrierSection";
+import CarrierSection from "../components/ShipperCarrierSection";
+import { carrier } from "../constants";
 
 function Carrier() {
   return (
     <div  className="h-90 w-full">
-      <CarrierSection />
+      <CarrierSection data={carrier}/>
     </div>
   );
 }

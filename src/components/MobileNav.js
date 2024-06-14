@@ -28,7 +28,7 @@ function MobileNav({ selectedMenu, showNav, setShowNav, setSelectedMenu }) {
           </li>
           <li className={ `relative group ${selectedMenu === 1 ? 'hazmat-label' : ''}`}>
             <Link
-              to={"/"}
+              to={"/carrier"}
               className="flex gap-1 items-center cursor-pointer text-base font-bold"
               onClick={() => { setShowNav(false); setSelectedMenu(1)}}
             >
@@ -54,7 +54,7 @@ function MobileNav({ selectedMenu, showNav, setShowNav, setSelectedMenu }) {
           </li>
           <li className={ `relative group ${selectedMenu === 3 ? 'hazmat-label' : ''}`}>
             <Link
-              to={"/"}
+              to={"/shipper"}
               className="flex gap-1 items-center cursor-pointer text-base font-bold"
               onClick={() => { setShowNav(false); setSelectedMenu(3)}}
             >
@@ -67,7 +67,7 @@ function MobileNav({ selectedMenu, showNav, setShowNav, setSelectedMenu }) {
           </li>
           <li className={ `relative group ${selectedMenu === 4 ? 'hazmat-label' : ''}`}>
             <Link
-              // to={"/resume"}
+              // to={"/"}
               className="flex gap-1 items-center cursor-pointer text-base font-bold"
               onClick={() => { setShowNav(false); setSelectedMenu(4)}}
             >
