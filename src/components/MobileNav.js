@@ -67,7 +67,7 @@ function MobileNav({ selectedMenu, showNav, setShowNav, setSelectedMenu }) {
           </li>
           <li className={ `relative group ${selectedMenu === 4 ? 'hazmat-label' : ''}`}>
             <Link
-              // to={"/"}
+              to={"/business-overview"}
               className="flex gap-1 items-center cursor-pointer text-base font-bold"
               onClick={() => { setShowNav(false); setSelectedMenu(4)}}
             >
