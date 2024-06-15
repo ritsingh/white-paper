@@ -27,8 +27,8 @@ function Header() {
       className={
         scroll
           // ? "lg:w-4/5 xl:w-3/5 hidden lg:flex xl:flex fixed bottom-5vh items-center justify-between px-4 z-50 bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg shadow-lg menu"
-          ? "lg:w-4/5 xl:w-3/5 hidden lg:flex xl:flex fixed bottom-5vh items-center justify-between px-4 z-50 bg-opacity-20 backdrop-blur-lg drop-shadow-lg shadow-lg menu"
-          : "lg:w-4/5 xl:w-3/5 hidden lg:flex xl:flex items-center justify-between px-4 z-50 fixed bottom-5vh menu"
+          ? "lg:w-4/5 xl:w-3/5 hidden lg:flex xl:flex fixed bottom-space items-center justify-between px-4 z-50 bg-opacity-20 backdrop-blur-lg drop-shadow-lg shadow-lg menu"
+          : "lg:w-4/5 xl:w-3/5 hidden lg:flex xl:flex items-center justify-between px-4 z-50 fixed bottom-space menu"
       }
     >
       {/* <span className="capitalize md:w-1/3 lg:w-1/2 flex items-center justify-center py-5 px-2 relative">
@@ -100,7 +100,7 @@ function Header() {
               onClick={() => setSelectedMenu(4)}
               className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
             >
-              <span className="">Bussines Overview</span>
+              <span className="">Business Overview</span>
               { selectedMenu === 4 ? 
                 (<WiDirectionDownRight />):
                 (<WiDirectionUpRight /> )

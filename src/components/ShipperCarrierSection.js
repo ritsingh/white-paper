@@ -4,13 +4,13 @@ import ContentBlock from "./ContentBlock";
 import { TwinStepwiseImages } from "./TwinImageStepper";
 import TwinContentBlock from "./TwinContentBlock";
 
-function CarrierSection({data}) {
+function CarrierSection({data, customBgClass = "about-us-header-container", bg="bg-[url(../public/carrier-bg.png)]", bgText="carrie-header w-[530px]" }) {
   return (
     <>
-    <div className="bg-contain bg-center bg-no-repeat h-screen w-screen relative bg-[url(../public/carrier-bg.png)] h-2/3 flex md:items-center about-us-header-container">
-      <div className="w-250px flex flex-col ml-0 about-us-header carrie-header">
-        <span className="text-white text-64px font-normal leading-80px font-Codec-Cold-Trial label-codec">{data.title}<br/></span>
-        <span className="text-24px leading-80px font-Codec-Cold-Trial hazmat-label">{data.subTitle}</span>
+    <div className={`bg-contain bg-center bg-no-repeat h-screen w-screen relative ${bg} h-2/3 flex md:items-center ${customBgClass}`}>
+      <div className={`p-10  flex flex-col ml-0 about-us-header ${bgText}`}>
+        <span className="text-white text-64px font-bold leading-80px gradient-font font-Codec-Cold-Trial label-codec">{data.title}<br/></span>
+        <span className="md:text-3xl text-sm leading-80px font-Codec-Cold-Trial">{data.subTitle}</span>
       </div>
     </div> 
     <div className="flex flex-col p-10 w-full bg-black">
@@ -19,7 +19,7 @@ function CarrierSection({data}) {
     <div className="flex flex-col h-full w-full bg-black">
       <ContentHeader additionClass="text-center" header={data.challenges.title}/>
       <br/>
-      <div className="flex flex-row h-full w-full bg-black">
+      <div className="flex md:flex-row flex-col h-full w-full bg-black md:p-10 px-8">
       < TwinContentBlock columns={data.challenges.columns}/>
       </div>
     </div>
@@ -65,17 +65,17 @@ function CarrierSection({data}) {
       <img
           src={data.keyFeatures.technologySection.image1.src}
           alt={data.keyFeatures.technologySection.image1.alt}
-          className="h-full mr-10 object-cover stake-hoder-image"
+          className="h-full mr-10 object-cover stake-hoder-image-tech"
         />
         <img
           src={data.keyFeatures.technologySection.image2.src}
           alt={data.keyFeatures.technologySection.image2.src}
-          className="h-full mr-10 object-cover stake-hoder-image"
+          className="h-full mr-10 object-cover stake-hoder-image-tech"
         />
         <img
           src={data.keyFeatures.technologySection.image3.src}
           alt={data.keyFeatures.technologySection.image3.src}
-          className="h-full mr-10 object-cover stake-hoder-image"
+          className="h-full mr-10 object-cover stake-hoder-image-tech"
         />
       </div> 
     </div>

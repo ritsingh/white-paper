@@ -1,59 +1,61 @@
-import { Carousel } from "@material-tailwind/react";
+// import { Carousel } from "@material-tailwind/react";
 import React from "react";
+import Slider from "react-slick";
 
-export function CarouselTransition() {
+
+export function CarouselTransition({ items = [], classes="pb-5" }) {
+
+  const settings = {
+    dots: true,
+    // fade: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 1200,
+    autoplaySpeed: 5000,
+    cssEase: "linear",
+    responsive: [{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      }
+    }]
+  };
+
   return (
-    <div className="lg:relative w-full block lg:hidden">
-      <Carousel
-        autoplay={true}
-        loop={true}
-        transition={{ duration: 2 }}
-        className="rounded-xl overflow-hidden"
-        controls={false}
-        slidesPerPage={1}
-        breakpoints={{
-          1024: {
-            slidesPerPage: 3,
-            centeredSlides: true,
-            peek: {
-              before: 10,
-              after: 10,
-            },
-          },
-          768: {
-            slidesPerPage: 2,
-            centeredSlides: true,
-            peek: {
-              before: 10,
-              after: 10,
-            },
-          },
-          640: {
-            slidesPerPage: 1.5,
-            centeredSlides: true,
-            peek: {
-              before: 10,
-              after: 10,
-            },
-          },
-        }}
-      >
-        <img
-          src="./stakeholders-1.png"
-          alt="image 1"
-          className="h-full w-full object-cover"
-        />
-        <img
-          src="./stakeholders-2.png"
-          alt="image 2"
-          className="h-full w-full object-cover"
-        />
-        <img
-          src="./stakeholders-3.png"
-          alt="image 3"
-          className="h-full w-full object-cover"
-        />
-      </Carousel>
+    <div className={`lg:relative w-full block lg:hidden slider-container ${classes}`}>
+
+      <Slider {...settings}>
+        {
+          items.map(item =>
+            <div className="items-center justify-center flex">
+              {item }
+            </div>
+          )
+        }
+      </Slider>
     </div>
   );
 }

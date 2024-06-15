@@ -348,7 +348,7 @@ export const esang = {
         },
         {
             title: 'Core Innovation',
-            content: ' At its core, EusoTrip features Esang AI, a proprietary artificial intelligence engine, meticulously crafted to navigate the complexities of HazMat logistics. This advanced AI is pivotal in transforming logistics operations by offering more than just route optimization.'
+            content: 'At its core, EusoTrip features Esang AI, a proprietary artificial intelligence engine, meticulously crafted to navigate the complexities of HazMat logistics. This advanced AI is pivotal in transforming logistics operations by offering more than just route optimization.'
         },
         {
             title: 'Comprehensive Data Analysis',
@@ -380,13 +380,14 @@ export const esang = {
         }
     ],
     content1: 'Esang AI ensures the selection of the most efficient routes by continuously assessing current road conditions and legal restrictions.',
+    content2: 'By leveraging advanced technologies like Esang AI, real-time data integration, and robust security measures, EusoTrip provides a comprehensive, efficient, and secure solution for HazMat logistics. These innovations not only streamline operations but also significantly enhance safety and compliance, positioning EusoTrip as a leader in the HazMat logistics industry.',
     esangDesignBlock: {
         header: 'Esang System Design'
     }
 }
 
 export const bo = {
-    title: 'EsBusiness Overviewang',
+    title: 'Business Overviewang',
     subTitle: 'Vision',
     header: {
         content:'The global hazardous materials (HazMat) logistics market is a substantial and growing sector, currently valued at approximately $230.2 billion in 2022. This market is projected to grow significantly, reaching $311.27 billion by 2028 at a compound annual growth rate (CAGR) of 7.4%​ (ResearchHub)​​ (BlueWeave Consulting)​. The U.S. market alone represents a significant portion, estimated to be around $86.5 billion annually. This trajectory underscores the significant scale and ongoing expansion of HazMat transportation, driven by increasing regulatory requirements and the rising complexity of supply chains.'

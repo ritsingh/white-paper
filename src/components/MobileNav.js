@@ -71,7 +71,7 @@ function MobileNav({ selectedMenu, showNav, setShowNav, setSelectedMenu }) {
               className="flex gap-1 items-center cursor-pointer text-base font-bold"
               onClick={() => { setShowNav(false); setSelectedMenu(4)}}
             >
-              <span className="">Bussines Overview</span>
+              <span className="">Business Overview</span>
               { selectedMenu === 4 ? 
                 (<WiDirectionDownRight />):
                 (<WiDirectionUpRight /> )

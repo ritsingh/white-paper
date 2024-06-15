@@ -15,6 +15,7 @@ function TwinContentBlock({ columns }) {
     <>
       <div className=" w-full md:w-1/2 p-4 justify-center items-center">
         <ContentHeader additionClass="text-left" header={columns[0].title}/>
+        <img src={"./line-break.png"} className="pb-1" />
         <h2 className="text-white">{columns[0].subTitle}</h2>
         <br />
         <div className="flex items-center">
@@ -25,6 +26,7 @@ function TwinContentBlock({ columns }) {
       </div>
       <div className=" w-full md:w-1/2 p-4 justify-center items-center">
         <ContentHeader additionClass="text-left" header={columns[1].title}/>
+        <img src={"./line-break.png"} className="pb-1" />
         <h2 className="text-white">{columns[1].subTitle}</h2>
         <br />
         <div className="flex items-center">

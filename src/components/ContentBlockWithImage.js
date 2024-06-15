@@ -10,8 +10,8 @@ function ContentBlockWithImage({ title, text, image, classes, commonPadding = "p
   ));
   return (
     <>
-      <div className={`w-full md:w-1/2 ${commonPadding} justify-center items-center`}>
-        <ContentHeader additionClass="text-left" header={title}/>
+      <ContentHeader additionClass="text-left" header={title}/>
+      <div className={`w-full md:w-1/2 ${commonPadding} justify-center items-center order-2 md:order-1`}>
         <br />
         <div className="flex items-center">
               <div className="w-[1590px] content">
@@ -19,7 +19,7 @@ function ContentBlockWithImage({ title, text, image, classes, commonPadding = "p
               </div>
         </div>
       </div>
-      <div className={`w-full md:w-1/2 ${commonPadding} justify-center items-center`}>
+      <div className={`w-full md:w-1/2 ${commonPadding} justify-center items-center order-1 md:order-2`}>
         <img
             src={image.src}
             alt={image.alt}

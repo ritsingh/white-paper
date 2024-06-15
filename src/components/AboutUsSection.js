@@ -17,7 +17,7 @@ function AboutUs() {
           <span className="text-64px font-bold leading-80px font-Codec-Cold-Trial tracking-tight hazmat-label">HazMat Logistics</span>
         </div>
       </div>
-      <div className="flex flex-col p-10 w-full bg-black">
+      <div className="flex flex-col p-10 w-full bg-black executiveSumary">
         <ContentHeader header={aboutUs.executiveSumary.title} />
         <br />
         <ContentBlock text={aboutUs.executiveSumary.content1} />
@@ -50,8 +50,26 @@ function AboutUs() {
 
           </div>
         </div>
-        {/* <CarouselTransition /> */}
-        <div className="p-10">
+        
+        {/* Responsive Carousel */}
+        <CarouselTransition
+          items={[<img
+            src="./stakeholders-1.png"
+            alt="image 1"
+            className="h-[70vh] m-auto"
+          />,
+          <img
+            src="./stakeholders-2.png"
+            alt="image 2"
+            className="h-[70vh] m-auto"
+          />,
+          <img
+            src="./stakeholders-3.png"
+            alt="image 3"
+            className="h-[70vh] m-auto"
+          />]} />
+          
+        <div className="px-10 md:py-10">
           <br />
           <ContentBlock text={aboutUs.stakeholders.content1} />
           <br />
@@ -59,7 +77,7 @@ function AboutUs() {
 
         </div>
       </div>
-      <div className="flex flex-wrap p-10 w-full bg-black items-center">
+      <div className="flex flex-wrap p-10 w-full bg-black items-start">
         <ContentBlockWithImage
           title={aboutUs.introduction.title}
           text={`${aboutUs.introduction.content1}\n\n${aboutUs.introduction.content2}`}

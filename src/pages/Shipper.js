@@ -5,7 +5,7 @@ import { shipper } from "../constants";
 function Shipper() {
   return (
     <div  className="h-90 w-full">
-      <CarrierSection data={shipper}/>
+      <CarrierSection data={shipper} bgText={"carrie-header-text"} customBgClass = {"shipper-bg"} bg={"bg-[url(../public/shipper-bg.png)]"} />
     </div>
   );
 }
