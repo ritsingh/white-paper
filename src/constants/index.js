@@ -383,3 +383,141 @@ export const esang = {
         header: 'Esang System Design'
     }
 }
+
+export const bo = {
+    title: 'EsBusiness Overviewang',
+    subTitle: 'Vision',
+    header: {
+        content:'The global hazardous materials (HazMat) logistics market is a substantial and growing sector, currently valued at approximately $230.2 billion in 2022. This market is projected to grow significantly, reaching $311.27 billion by 2028 at a compound annual growth rate (CAGR) of 7.4%​ (ResearchHub)​​ (BlueWeave Consulting)​. The U.S. market alone represents a significant portion, estimated to be around $86.5 billion annually. This trajectory underscores the significant scale and ongoing expansion of HazMat transportation, driven by increasing regulatory requirements and the rising complexity of supply chains.'
+    },
+    marketoppotunities: {
+        title: 'Market Opportunities',
+        text: 'Unlocking a Multi-Billion Dollar Opportunity',
+        imageSrc: './bo-market-oportunities-image.png',
+        imageAlt: './bo-market-oportunities-image.png',
+        contentTitle: 'EusoTrip and Market Segmentation',
+        contentText: 'EusoTrip positions itself strategically within the HazMat logistics landscape, particularly well-suited for segments involving commonly transported hazardous materials. These include flammable liquids, toxic solids, and corrosive materials, which represent a substantial portion of the U.S. HazMat transportation market. While the exact market size for these segments is still under development, industry trends suggest they hold significant potential, with these materials comprising over 60% of the U.S. HazMat logistics market​ (Export and Freight)​.\n\nThe rise of e-commerce is another crucial driver transforming the HazMat logistics landscape. This sector is expected to witness a surge in demand for solutions that handle smaller-quantity HazMat shipments efficiently and compliantly. E-commerce sales are projected to grow at a CAGR of 14.7%, significantly impacting the demand for specialized logistics solutions​ (Export and Freight)​. EusoTrips platform is designed to address these specific needs within the e-commerce ecosystem, providing a competitive edge in a rapidly evolving market.'
+    },
+    painPoints: {
+        title: 'Pain Points = Opportunity',
+        content: 'Despite its size and potential, the HazMat logistics industry faces significant challenges. Manual and inefficient operations, extended payment cycles, underutilized trucking capacities, and a lack of transparency due to opaque practices by intermediaries plague the current system. These inefficiencies create a substantial, underserved market segment ripe for disruption through innovative technological solutions like EusoTrip. For example, inefficiencies in the current system can lead to a 15-20% increase in operational costs, presenting a significant opportunity for cost savings and efficiency improvements​ (Fleet Point)​.'
+    },
+    contentBlock1: {
+        title: 'EusoTrips Differentiators',
+        blocks: [
+            {
+            title: 'Deep Industry Focus',
+            iconSrc: './bo-icon-1.svg',
+            iconAlt: 'Icon 1',
+            content: 'Specialization in HazMat logistics ensures a platform that caters to the specific needs and challenges of this sector.'
+            },
+            {
+                title: 'Comprehensive User Ecosystem',
+                iconSrc: './bo-icon-2.svg',
+                iconAlt: 'Icon 1',
+                content: 'EusoTrip addresses the needs of all stakeholders, including carriers, suppliers, dispatchers, and even Pilot Drivers, fostering a collaborative and efficient environment.'
+            },
+            {
+                title: 'Cutting-Edge Technology',
+                iconSrc: './bo-icon-3.svg',
+                iconAlt: 'Icon 3',
+                content: 'integration of advanced technologies like Esang AI and real-time data analytics optimizes operations and enhances efficiency.'
+            },
+        ]
+    },
+    contentBlock2: {
+        title: 'Barriers to Entry',
+        blocks: [
+            {
+            title: 'Industry Data Access',
+            iconSrc: './bo-icon-4.svg',
+            iconAlt: 'Icon 4',
+            content: 'EusoTrips deep understanding of the HazMat logistics industry, coupled with access to crucial data, positions it strategically'
+            },
+            {
+                title: 'Technological Infrastructure',
+                iconSrc: './bo-icon-5.svg',
+                iconAlt: 'Icon 5',
+                content: 'The advanced technological foundation of EusoTrip creates a significant hurdle for new entrants to replicate.'
+            },
+            {
+                title: 'Network Effect',
+                iconSrc: './bo-icon-6.svg',
+                iconAlt: 'Icon 6',
+                content: 'EusoTrips established user base benefits from a network effect, creating further barriers for new players attempting to gain traction.'
+            },
+        ]
+    },
+    longTermVision: {
+        title: 'Long-term Vision',
+        content: [
+            {
+                title: 'Bulk Material Transport',
+                iconSrc: './bo-icon-7.svg',
+                iconAlt: 'Icon 7',
+                content: 'EusoTrip could leverage its core competencies to optimize the transportation of non-hazardous bulk materials like construction materials, agricultural products, and more. This expansion opens potential new revenue streams while maintaining a specialized focus.',
+            },
+            {
+                title: 'Comprehensive Logistics Solutions',
+                iconSrc: './bo-icon-8.svg',
+                iconAlt: 'Icon 8',
+                content: 'Building on its platforms capabilities, EusoTrip could evolve into a comprehensive logistics solution provider, addressing diverse shipping needs and further increasing its overall value proposition within the industry.',
+            },
+        ],
+        imageBlock: {
+            src: './bo-long-term-vision-image.png',
+            alt: 'Long Term Vision'
+        }
+    },
+    contentBlock3: {
+        title: 'Key Points for Investors',
+        blocks: [
+            {
+            title: 'Cost-Efficient Growth',
+            iconSrc: './bo-icon-9.svg',
+            iconAlt: 'Icon 9',
+            content: 'EusoTrips scalability model presents a significant advantage for investors. Expansion translates into increased revenue potential without a proportionally linear increase in operational costs'
+            },
+            {
+                title: 'Adaptability',
+                iconSrc: './bo-icon-10.svg',
+                iconAlt: 'Icon 10',
+                content: 'The platforms flexible foundation enables quick adaptation to changing market dynamics, evolving regulations, and future growth opportunities in new segments.'
+            },
+            {
+                title: 'Ambitious Vision',
+                iconSrc: './bo-icon-11.svg',
+                iconAlt: 'Icon 11',
+                content: 'EusoTrips long-term goal to expand its service offerings demonstrates its dedication to continuous innovation and market expansion, solidifying its potential as a long-term value generator.'
+            },
+        ]
+    },
+    competitiveAnalysis: {
+        title: 'Competitive Analysis',
+        text: 'The HazMat logistics landscape currently features various players, each with their strengths and weaknesses. Heres a breakdown of the key competitor types EusoTrip aims to surpass',
+    },
+    businessModel: {
+        title: 'Business Model',
+        imageSrc: './bo-business-model-image.png',
+        imageAlt: 'Business Model',
+    },
+    eusotripAdvantage: {
+        title: 'EusoTrip Advantange',
+        imageSrc: './bo-eusotrip-advantage-image.png',
+        imageAlt: 'Eusotrip Advantage',
+    },
+    financialProjection: {
+        title: 'Financial Projections',
+        imageBlock: [
+            {
+                imageSrc: './bo-fina-projection-image-1.png',
+                imageAlt: 'Image 1',
+            },
+            {
+                imageSrc: './bo-fina-projection-image-2.png',
+                imageAlt: 'Image 2',
+            }
+        ]
+    }
+    
+}
