@@ -100,9 +100,16 @@ body::-webkit-scrollbar {
 .title {
   color: #FFF;
   font-family: "codec pro bold";
-  font-size: 40px;
+  /* font-size: 40px; */
+  font-size: 50px;
   /* font-style: normal; */
   /* font-weight: 700; */
+}
+
+.subtitle {
+  /* font-size: 25px; */
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.60);
 }
 
 .content {
@@ -120,7 +127,7 @@ body::-webkit-scrollbar {
 }
 
 .crop-container {
-  width: 75%; /* desired width after cropping */
+  /* width: 75%;  */
   height: auto; /* adjust as needed */
   overflow: hidden; /* hides the overflowing part of the image */
   position: relative; /* ensures the child image is positioned relative to this container */
@@ -158,6 +165,14 @@ body::-webkit-scrollbar {
   background-position-y: 30%;
   width: 100%;
 }
+
+.bo-bg {
+  background-size: cover;
+  background-position-y: 30%;
+  width: 100%;
+}
+
+
 
 .header-logo {
   width: 120px;
@@ -248,7 +263,15 @@ body::-webkit-scrollbar {
     margin-top: 25%;
     padding: 0 2.5rem;
   }
-
+  .bo-img {
+    height: 40vh !important;
+  }
+  
+  .shipper-bg {
+    background-size: 100% 90vh;
+    background-position-y: top;
+  }
+  
   .about-us-header
   {
     padding: 0;

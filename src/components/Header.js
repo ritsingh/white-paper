@@ -26,7 +26,6 @@ function Header() {
         <div
       className={
         scroll
-          // ? "lg:w-4/5 xl:w-3/5 hidden lg:flex xl:flex fixed bottom-5vh items-center justify-between px-4 z-50 bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg shadow-lg menu"
           ? "lg:w-4/5 xl:w-3/5 hidden lg:flex xl:flex fixed bottom-space items-center justify-between px-4 z-50 bg-opacity-20 backdrop-blur-lg drop-shadow-lg shadow-lg menu"
           : "lg:w-4/5 xl:w-3/5 hidden lg:flex xl:flex items-center justify-between px-4 z-50 fixed bottom-space menu"
       }

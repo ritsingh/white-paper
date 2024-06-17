@@ -24,11 +24,11 @@ export const aboutUs = {
             {
                 src: "./market-problems-image-1.png",
                 alt: "./market-problems-image-1.png"
-            }, 
+            },
             {
                 src: "./market-problems-image-2.png",
                 alt: "./market-problems-image-2.png"
-            }, 
+            },
             {
                 src: "./market-problems-image-3.png",
                 alt: "./market-problems-image-3.png"
@@ -38,11 +38,11 @@ export const aboutUs = {
             {
                 src: "./market-problems-image-4.png",
                 alt: "./market-problems-image-4.png"
-            }, 
+            },
             {
                 src: "./market-problems-image-5.png",
                 alt: "./market-problems-image-5.png"
-            }, 
+            },
             {
                 src: "./market-problems-image-6.png",
                 alt: "./market-problems-image-6.png"
@@ -60,23 +60,23 @@ export const aboutUs = {
                 iconAlt: 'Icon-1',
                 title: 'Advanced real-time tracking',
                 description: 'Monitor your shipments in real-time with geo-fencing and predictive ETAs, ensuring unparalleled safety and accountability.'
-              },
-              {
+            },
+            {
                 imageSrc: './wwh-group-1-image-2.png',
                 imageAlt: 'Image 2',
                 iconSrc: './wwh-group-1-icon-2.svg',
                 iconAlt: 'Icon-2',
                 title: 'Unified communication Hub',
                 description: 'Leverage our in-app messaging platform for instant, reliable communication between shippers, carriers, and dispatchers, reducing response times and errors.'
-              }
+            }
         ],
         imageBlock2: {
-                src: "./wwh-group-1-image-3.png",
-                alt: "./wwh-group-1-image-3.png",
-                iconSrc: './wwh-group-1-icon-3.svg',
-                iconAlt: 'Icon-3',
-                title: "Intelligent data analytics",
-                description: "Gain access to vital data and analytics through intuitive dashboards, empowering you to make informed, data-driven decisions for optimized operations."
+            src: "./wwh-group-1-image-3.png",
+            alt: "./wwh-group-1-image-3.png",
+            iconSrc: './wwh-group-1-icon-3.svg',
+            iconAlt: 'Icon-3',
+            title: "Intelligent data analytics",
+            description: "Gain access to vital data and analytics through intuitive dashboards, empowering you to make informed, data-driven decisions for optimized operations."
         },
         imageBlock3: [
             {
@@ -86,15 +86,15 @@ export const aboutUs = {
                 iconAlt: 'Icon-4',
                 title: 'User-Friendly Payment Features',
                 description: 'Utilize Eusowallet, a secure virtual wallet, to facilitate quick and hassle-free transactions, improving cash flow and reducing administrative overhead.'
-              },
-              {
+            },
+            {
                 imageSrc: './wwh-group-1-image-5.png',
                 imageAlt: 'Image-5',
                 iconSrc: './wwh-group-1-icon-5.svg',
                 iconAlt: 'Icon-5',
                 title: 'Esang AI: Your Virtual Hazmat Assistant',
                 description: 'Esang AI offers real-time assistance with hazardous material classifications, job matching, fuel consumption analytics, and more, serving as your comprehensive digital guide in hazmat logistics.'
-              }
+            }
         ],
         imageBlock4: [
             {
@@ -104,15 +104,15 @@ export const aboutUs = {
                 iconAlt: 'Icon-4',
                 title: 'Reducing Delays',
                 description: 'EusoTrip’s Esang AI-driven real-time planning and route optimization reduce idle time, ensure compliance with HazMat restrictions, and save carriers up to 20% on fuel  costs while cutting transit times by up to 15%'
-              },
-              {
+            },
+            {
                 imageSrc: './wwh-group-1-image-7.png',
                 imageAlt: 'Image-5',
                 iconSrc: './wwh-group-1-icon-7.svg',
                 iconAlt: 'Icon-5',
                 title: 'Simplifying Compliance',
                 description: 'The platform automates documentation and compliance, reducing carriers admin burden and improving safety. It decreases delays by 30% and reduces fines by ensuring regulation compliance.'
-              }
+            }
         ],
         imageBlock5: [
             {
@@ -122,7 +122,7 @@ export const aboutUs = {
                 iconAlt: 'Icon-4',
                 title: 'Cost Control',
                 description: 'EusoTrip’s transparent pricing and efficient route planning boost earnings, cut fuel use, and reduce expenses, increasing carriers profitability by up to 10%.'
-              }
+            }
         ],
         content1: 'By addressing these challenges, EusoTrip not only enhances individual efficiencies but also creates a connected HazMat logistics ecosystem, enabling suppliers, dispatchers, and brokers to collaborate seamlessly on one secure platform. This comprehensive approach positions EusoTrip as a transformative force in the HazMat logistics market, driving significant improvements in safety, efficiency, and profitability.'
     },
@@ -159,7 +159,7 @@ export const carrier = {
     title: 'Carrier',
     subTitle: 'Dispatcher  | Company Carrier | Individual Carrier',
     header: {
-        content:'EusoTrip empowers carriers with efficient transportation solutions. Easily manage drivers, access a marketplace of shipper jobs,  and bid on contracts. Stay connected with real-time tracking and instant payments via EusoWallet. Experience the future of transportation logistics  with EusoTripEusoTrip empowers carriers with efficient transportation solutions. Easily manage drivers, access a marketplace of shipper jobs, and bid on contracts. Stay connected with real-time tracking and instant payments via EusoWallet. Experience the future of transportation logistics with EusoTrip.'
+        content: 'EusoTrip empowers carriers with efficient transportation solutions. Easily manage drivers, access a marketplace of shipper jobs,  and bid on contracts. Stay connected with real-time tracking and instant payments via EusoWallet. Experience the future of transportation logistics  with EusoTripEusoTrip empowers carriers with efficient transportation solutions. Easily manage drivers, access a marketplace of shipper jobs, and bid on contracts. Stay connected with real-time tracking and instant payments via EusoWallet. Experience the future of transportation logistics with EusoTrip.'
     },
     challenges: {
         title: 'Challenges',
@@ -179,11 +179,11 @@ export const carrier = {
     },
     keyFeatures: {
         info: {
-            image1:{
+            image1: {
                 src: './carrier-ifo-image-1.png',
                 alt: 'Image 1'
             },
-            image2:{
+            image2: {
                 src: './carrier-ifo-image-2.png',
                 alt: 'Image 2'
             },
@@ -191,8 +191,8 @@ export const carrier = {
             iconAlt: 'Icon-1',
             title: 'Real-time Load Matching Engine',
             description: 'Benefit for Carriers: Quickly find qualified HazMat jobs, cutting load matching time by up to 50%. AI-powered matching boosts productivity and revenue by considering route and driver specifics, reducing empty miles.'
-          },
-        imageBlock: [
+        },
+        imageBlock0: [
             {
                 imageSrc: './carrier-image-3.png',
                 imageAlt: 'Image 3',
@@ -210,7 +210,7 @@ export const carrier = {
                 description: 'Seamlessly manage your drivers within the platform. Add new drivers, edit existing profiles, and keep essential information up to date, ensuring smooth operations and compliance with regulations.'
             }
         ],
-        imageBlock1: [
+        imageBlock: [
             {
                 imageSrc: './carrier-image-5.png',
                 imageAlt: 'Image 5',
@@ -229,19 +229,23 @@ export const carrier = {
             }
         ],
         technologySection: {
-            image1:{
+            image1: {
                 src: './carrier-image-7.png',
                 alt: 'Image 1'
             },
-            image2:{
+            image2: {
                 src: './carrier-image-8.png',
                 alt: 'Image 2'
             },
-            image3:{
+            image3: {
                 src: './carrier-image-9.png',
                 alt: 'Image 2'
+            },
+            mobileImg: {
+                src: './technolgy-mobile.png',
+                alt: 'Image 4'                
             }
-          }
+        }
     }
 }
 
@@ -249,7 +253,7 @@ export const shipper = {
     title: 'Shipper',
     subTitle: 'Supplier | Broker',
     header: {
-        content:'Our platform transforms the logistics landscape, offering a seamless and efficient way to transport goods. Whether you are a small business or a large enterprise, EusoTrip connects you to a vast network of trusted carriers and state-of-the-art technology, optimizing your supply chain. EusoTrip simplifies the shipping process with transparent pricing, real-time tracking, and effortless communication. By harnessing our technology, shippers can effortlessly book, track, and manage shipments, saving time and cutting costs. Join the community of shippers who rely on EusoTrip for safe and efficient delivery. Discover the future of freight logistics with EusoTrip – where shipping meets simplicity'
+        content: 'Our platform transforms the logistics landscape, offering a seamless and efficient way to transport goods. Whether you are a small business or a large enterprise, EusoTrip connects you to a vast network of trusted carriers and state-of-the-art technology, optimizing your supply chain. EusoTrip simplifies the shipping process with transparent pricing, real-time tracking, and effortless communication. By harnessing our technology, shippers can effortlessly book, track, and manage shipments, saving time and cutting costs. Join the community of shippers who rely on EusoTrip for safe and efficient delivery. Discover the future of freight logistics with EusoTrip – where shipping meets simplicity'
     },
     challenges: {
         title: 'Challenges',
@@ -268,70 +272,92 @@ export const shipper = {
         ]
     },
     keyFeatures: {
-        info: {
-            image1:{
-                src: './shipper-image-1.png',
-                alt: 'Image 1'
+        imageBlock0: [
+            {
+                imageSrc: './shipper-image-1.png',
+                imageAlt: 'Image 1',
+                iconSrc: './shipper-icon-1.svg',
+                iconAlt: 'Icon 1',
+                title: 'EASY SHIPMENT CREATING',
+                description: ' Effortlessly create shipments by providing all necessary information in one intuitive interface.'
             },
-            image2:{
-                src: './shipper-image-2.png',
-                alt: 'Image 2'
-            },
-            iconSrc: './shipper-icon-1.svg',
-            iconAlt: 'Icon-1',
-            title: 'Real-time Load Matching Engine',
-            description: 'Benefit for Carriers: Quickly find qualified HazMat jobs, cutting load matching time by up to 50%. AI-powered matching boosts productivity and revenue by considering route and driver specifics, reducing empty miles.'
-          },
+            {
+                imageSrc: './shipper-image-2.png',
+                imageAlt: 'Image 2',
+                iconSrc: './shipper-icon-2.svg',
+                iconAlt: 'Icon-2',
+                title: 'Load MANAGMENT',
+                description: 'Seamlessly manage all your loads in one place. From pending to scheduled and in-progress shipments, easily keep track of their status.'
+            }
+        ],
         imageBlock: [
             {
                 imageSrc: './shipper-image-3.png',
                 imageAlt: 'Image 3',
                 iconSrc: './shipper-icon-2.svg',
                 iconAlt: 'Icon-2',
-                title: 'EASY SHIPMENT CREATING',
-                description: ' Effortlessly create shipments by providing all necessary information in one intuitive interface.'
-            },
-            {
-                imageSrc: './shipper-image-4.png',
-                imageAlt: 'Image 4',
-                iconSrc: './shipper-icon-3.svg',
-                iconAlt: 'Icon-3',
-                title: 'Load MANAGMENT',
-                description: 'Seamlessly manage all your loads in one place. From pending to scheduled and in-progress shipments, easily keep track of their status.'
-            }
-        ],
-        imageBlock1: [
-            {
-                imageSrc: './shipper-image-5.png',
-                imageAlt: 'Image 5',
-                iconSrc: './shipper-icon-4.svg',
-                iconAlt: 'Icon-4',
                 title: 'WAREHOUSE ADDRESS',
                 description: 'Streamlined Shipment Creation Simplify the shipment creation process by utilizing your warehouse addresses from  "My Facility Book." No need to enter address details manually each time; simply select the warehouse address you have added, saving time and reducing errors.'
             },
             {
-                imageSrc: './shipper-image-6.png',
-                imageAlt: 'Image 6',
-                iconSrc: './shipper-icon-5.svg',
-                iconAlt: 'Icon-5',
+                imageSrc: './shipper-image-4.png',
+                imageAlt: 'Image 4',
+                iconSrc: './shipper-icon-4.svg',
+                iconAlt: 'Icon-4',
                 title: 'EFFICIENT CARGO HANDLING',
                 description: 'Manage large volumes of materials with ease. By visualizing multiple filled trailers, you can effectively plan and coordinate the transportation of your cargo, optimizing efficiency and minimizing delays.'
             }
         ],
-        technologySection: {
+        // imageBlock1: [
+        //     {
+        //         imageSrc: './shipper-image-5.png',
+        //         imageAlt: 'Image 5',
+        //         iconSrc: './shipper-icon-4.svg',
+        //         iconAlt: 'Icon-4',
+        //         title: 'WAREHOUSE ADDRESS',
+        //         description: 'Streamlined Shipment Creation Simplify the shipment creation process by utilizing your warehouse addresses from  "My Facility Book." No need to enter address details manually each time; simply select the warehouse address you have added, saving time and reducing errors.'
+        //     },
+        //     {
+        //         imageSrc: './shipper-image-6.png',
+        //         imageAlt: 'Image 6',
+        //         iconSrc: './shipper-icon-5.svg',
+        //         iconAlt: 'Icon-5',
+        //         title: 'EFFICIENT CARGO HANDLING',
+        //         description: 'Manage large volumes of materials with ease. By visualizing multiple filled trailers, you can effectively plan and coordinate the transportation of your cargo, optimizing efficiency and minimizing delays.'
+        //     }
+        // ],
+        info: {
             image1:{
+                src: './shipper-image-5.png',
+                alt: 'Image 5'
+            },
+            image2:{
+                src: './shipper-image-6.png',
+                alt: 'Image 6'
+            },
+            iconSrc: './shipper-icon-5.svg',
+            iconAlt: 'Icon-5',
+            title: 'BID REQUEST MANAGEMENT',
+            description: 'Choose the bid that best suits your requirements. Whether you opt to accept a bid or negotiate by making a counteroffer, enjoy the flexibility to make decisions that align with your shipping priorities.'
+          },
+        technologySection: {
+            image1: {
                 src: './carrier-image-7.png',
                 alt: 'Image 1'
             },
-            image2:{
+            image2: {
                 src: './carrier-image-8.png',
                 alt: 'Image 2'
             },
-            image3:{
+            image3: {
                 src: './carrier-image-9.png',
-                alt: 'Image 2'
+                alt: 'Image 3'
+            },
+            mobileImg: {
+                src: './technolgy-mobile.png',
+                alt: 'Image 4'                
             }
-          }
+        }
     }
 }
 
@@ -339,7 +365,7 @@ export const esang = {
     title: 'Esang',
     subTitle: 'Esang AI: The Heart of Optimization',
     header: {
-        content:'EusoTrip leverages a suite of cutting-edge technologies to revolutionize the HazMat logistics industry. This technological edge ensures a seamless, efficient, and safe experience for all stakeholder'
+        content: 'EusoTrip leverages a suite of cutting-edge technologies to revolutionize the HazMat logistics industry. This technological edge ensures a seamless, efficient, and safe experience for all stakeholder'
     },
     contentBlock1: [
         {
@@ -387,10 +413,12 @@ export const esang = {
 }
 
 export const bo = {
-    title: 'Business Overviewang',
+    title: 'Business Overview',
     subTitle: 'Vision',
+    imageSrcArrow: './bo-vision-arrow.png',
+    visionCaption: 'Revolutionizing Hazmat Logistics: Safer, Smarter, Compliant',
     header: {
-        content:'The global hazardous materials (HazMat) logistics market is a substantial and growing sector, currently valued at approximately $230.2 billion in 2022. This market is projected to grow significantly, reaching $311.27 billion by 2028 at a compound annual growth rate (CAGR) of 7.4%​ (ResearchHub)​​ (BlueWeave Consulting)​. The U.S. market alone represents a significant portion, estimated to be around $86.5 billion annually. This trajectory underscores the significant scale and ongoing expansion of HazMat transportation, driven by increasing regulatory requirements and the rising complexity of supply chains.'
+        content: 'The global hazardous materials (HazMat) logistics market is a substantial and growing sector, currently valued at approximately $230.2 billion in 2022. This market is projected to grow significantly, reaching $311.27 billion by 2028 at a compound annual growth rate (CAGR) of 7.4%​ (ResearchHub)​​ (BlueWeave Consulting)​. The U.S. market alone represents a significant portion, estimated to be around $86.5 billion annually. This trajectory underscores the significant scale and ongoing expansion of HazMat transportation, driven by increasing regulatory requirements and the rising complexity of supply chains.'
     },
     marketoppotunities: {
         title: 'Market Opportunities',
@@ -406,12 +434,13 @@ export const bo = {
     },
     contentBlock1: {
         title: 'EusoTrips Differentiators',
+        description: "EusoTrip sets itself apart through several key factors",
         blocks: [
             {
-            title: 'Deep Industry Focus',
-            iconSrc: './bo-icon-1.svg',
-            iconAlt: 'Icon 1',
-            content: 'Specialization in HazMat logistics ensures a platform that caters to the specific needs and challenges of this sector.'
+                title: 'Deep Industry Focus',
+                iconSrc: './bo-icon-1.svg',
+                iconAlt: 'Icon 1',
+                content: 'Specialization in HazMat logistics ensures a platform that caters to the specific needs and challenges of this sector.'
             },
             {
                 title: 'Comprehensive User Ecosystem',
@@ -429,12 +458,13 @@ export const bo = {
     },
     contentBlock2: {
         title: 'Barriers to Entry',
+        description: "Several factors create barriers to entry for new competitors in this space",
         blocks: [
             {
-            title: 'Industry Data Access',
-            iconSrc: './bo-icon-4.svg',
-            iconAlt: 'Icon 4',
-            content: 'EusoTrips deep understanding of the HazMat logistics industry, coupled with access to crucial data, positions it strategically'
+                title: 'Industry Data Access',
+                iconSrc: './bo-icon-4.svg',
+                iconAlt: 'Icon 4',
+                content: 'EusoTrips deep understanding of the HazMat logistics industry, coupled with access to crucial data, positions it strategically'
             },
             {
                 title: 'Technological Infrastructure',
@@ -447,6 +477,30 @@ export const bo = {
                 iconSrc: './bo-icon-6.svg',
                 iconAlt: 'Icon 6',
                 content: 'EusoTrips established user base benefits from a network effect, creating further barriers for new players attempting to gain traction.'
+            },
+        ]
+    },
+    contentBlock4: {
+        title: 'Scalability',
+        description: "EusoTrip's technology-driven model prioritizes scalability, enabling growth without proportional cost increases",
+        blocks: [
+            {
+                title: 'Cloud-Based Infrastructure',
+                iconSrc: './bo-icon-12.svg',
+                iconAlt: 'Icon 12',
+                content: 'The use of cloud-based solutions provides flexibility and adaptability in resources. This allows EusoTrip to efficiently scale its computing power, data storage, and network capabilities in line with increased user demand and operational growth.'
+            },
+            {
+                title: 'Automated Systems',
+                iconSrc: './bo-icon-13.svg',
+                iconAlt: 'Icon 13',
+                content: ' Extensive automation of processes like load matching, compliance checks, and documentation reduces the need for manual interventions and additional operational overhead as the platform expands.'
+            },
+            {
+                title: 'Data-Driven Optimization',
+                iconSrc: './bo-icon-14.svg',
+                iconAlt: 'Icon 14',
+                content: 'Machine learning algorithms and data analytics continuously optimize route planning, load matching, and other key processes. This proactive optimization helps to accommodate expanding volumes without sacrificing efficiency.'
             },
         ]
     },
@@ -475,10 +529,10 @@ export const bo = {
         title: 'Key Points for Investors',
         blocks: [
             {
-            title: 'Cost-Efficient Growth',
-            iconSrc: './bo-icon-9.svg',
-            iconAlt: 'Icon 9',
-            content: 'EusoTrips scalability model presents a significant advantage for investors. Expansion translates into increased revenue potential without a proportionally linear increase in operational costs'
+                title: 'Cost-Efficient Growth',
+                iconSrc: './bo-icon-9.svg',
+                iconAlt: 'Icon 9',
+                content: 'EusoTrips scalability model presents a significant advantage for investors. Expansion translates into increased revenue potential without a proportionally linear increase in operational costs'
             },
             {
                 title: 'Adaptability',
@@ -500,6 +554,7 @@ export const bo = {
     },
     businessModel: {
         title: 'Business Model',
+        description: 'Revenue road map',
         imageSrc: './bo-business-model-image.png',
         imageAlt: 'Business Model',
     },
@@ -519,7 +574,29 @@ export const bo = {
                 imageSrc: './bo-fina-projection-image-2.png',
                 imageAlt: 'Image 2',
             }
+        ],
+        imageBlock1: [
+            {
+                imageSrc: './bo-fina-projection-image-1.png',
+                imageAlt: 'Image 3',
+            },
+            {
+                imageSrc: './bo-fina-projection-image-2.png',
+                imageAlt: 'Image 4',
+            }
+        ],
+        imageBlock2: [
+            {
+                imageSrc: './summary-table.png',
+                imageAlt: 'Image 5',
+            }
         ]
+    },
+    milestones : {
+        title: 'Milestones',
+        imageSrc: './milestone-web.png',
+        imageSrcMobile: './milestone-mobile.png',
+        imageAlt: 'Image 6',
     }
-    
+
 }

@@ -22,14 +22,14 @@ export function StepwiseImages({ images }) {
       </div>
       <CarouselTransition
         items={
-            images.map((image) =>
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="h-[70vh] m-auto"
-              />
-            )
-          } />
+          images.map((image) =>
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="h-[70vh] m-auto"
+            />
+          )
+        } />
     </>
   );
 }

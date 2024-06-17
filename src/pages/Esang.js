@@ -58,7 +58,7 @@ function Esang() {
             ))}
           </div>
           <CarouselTransition
-            classes={"pt-5 pb-0 md:pb-5"}
+            classes={"pt-12 px-10 pb-0 md:pb-5"}
             items={
               esang.imageBlock.map((image) =>
                 <img
