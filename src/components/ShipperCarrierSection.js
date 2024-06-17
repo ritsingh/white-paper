@@ -11,7 +11,7 @@ function CarrierSection({ data, customBgClass = "about-us-header-container", bg 
       <div className={`bg-contain bg-center bg-no-repeat h-screen w-screen relative ${bg} h-2/3 flex md:items-center ${customBgClass}`}>
         <div className={`p-10  flex flex-col ml-0 about-us-header ${bgText}`}>
           <span className="text-white text-64px font-bold leading-80px gradient-font font-Codec-Cold-Trial label-codec">{data.title}<br /></span>
-          <span className="md:text-3xl text-sm leading-80px font-Codec-Cold-Trial">{data.subTitle}</span>
+          <span className={`md:text-3xl  ${isCarrier ? "w-[170px] md:w-full" : "w-100"  }   text-sm leading-80px font-Codec-Cold-Trial`}>{data.subTitle}</span>
         </div>
       </div>
       <div className="flex flex-col p-10 w-full bg-black">

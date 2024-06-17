@@ -302,10 +302,10 @@ body::-webkit-scrollbar {
     justify-content: center;
     text-align: center;
     background-size: cover;
-    padding-top: 20%;
+    margin-top: 15%;
     height: 85vh;
     background-position-x: 55%;
-    padding: 0;
+    padding: 1rem 2rem;
   }
 
   .intro-bg {
@@ -332,10 +332,10 @@ body::-webkit-scrollbar {
   .esang {
     background-size: cover;
     background-position-x: 40%;
-    height: 70vh;
-    padding-top: 25%;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    height: 80vh;
+    margin-top: 15%;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
   }
 
   .bo-img {
@@ -343,8 +343,11 @@ body::-webkit-scrollbar {
   }
 
   .shipper-bg {
-    background-size: 100% 90vh;
-    background-position-y: top;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    margin-top: 10%;
+    padding-top: 2rem;
   }
 
   .about-us-header {
@@ -412,12 +415,12 @@ body::-webkit-scrollbar {
     position: fixed;
     width: 100%;
     z-index: 99;
-    /* background: #00000094; */
     background: #000000;
-    padding: 12px 0;
+    padding: 9px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    top: 0;
   }
 }
 
