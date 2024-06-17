@@ -14,7 +14,7 @@ function App() {
       <img
         src="./logo.svg"
         alt="image 1"
-        className="header-logo p-10"
+        className="header-logo p-10 hidden lg:block md:block"
       />
       <img
         src="./side-float.png"
@@ -32,7 +32,7 @@ function App() {
           <Route exact path="/business-overview" element={<BusinessOverview />} />
         </Routes>
       </Router>
-      {/* <Footer /> */}
+      {/* <Footer />*/}
     </div>
   );
 }

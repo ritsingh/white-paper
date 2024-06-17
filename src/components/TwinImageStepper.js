@@ -10,26 +10,27 @@ export function TwinStepwiseImages({ items, classes="" }) {
           <img
             src={items[0].imageSrc}
             alt={items[0].imageAlt}
-            className="w-full h-full  object-cover shadow-lg"
+            className="h-full w-[90%]  object-cover shadow-lg"
           />
         </div>
         {/* Central Text and Icons */}
-        <div className="flex flex-col justify-between items-center text-center w-full h-[100vh] text-lg	">
+        <div className="flex flex-col justify-between items-center text-center w-full h-[100vh] text-lg	md:px-15">
           {items.map((item, index) => (
-            <div key={index} className={`mb-10 text-white ${index === 0 ? 'mb-[80%] text-left' : 'text-right'}`}>
-              <div className={`flex items-end ${index === 0 ? 'justify-start ' : 'justify-end'}`}>
+            <div key={index} className={`mb-10 text-white text-left ${index === 0 ? 'mb-[80%]' : ''}`}>
+              {/* <div className={`flex items-start text-left ${index === 0 ? 'justify-start ' : 'justify-end'}`}> */}
+              <div className={`flex items-start text-left justify-start`}>
                 <div className='flex flex-col'>
-                  <h2 className="text-xl font-bold pb-1">{item.title}</h2>
-                  <img src={"./line-break.png"} className="pb-1" />
+                  <h2 className="md:text-3xl text-xl font-bold pb-1 w-full md:w-[90%]">{item.title}</h2>
+                  <img src={"./line-break.png"} className="pb-1 w-[55%]" />
                 </div>
                 {index === 0 && (
-                  <img src={item.iconSrc} alt={item.iconAlt} className="w-12 h-12 ml-3 p-1" />
+                  <img src={item.iconSrc} alt={item.iconAlt} className="w-20 h-20 ml-3 p-1" />
                 )}
                 {index === 1 && (
-                  <img src={item.iconSrc} alt={item.iconAlt} className="w-12 h-12 ml-3 p-1" />
+                  <img src={item.iconSrc} alt={item.iconAlt} className="w-20 h-20 ml-3 p-1" />
                 )}
               </div>
-              <p>{item.description}</p>
+              <p className='content-color'>{item.description}</p>
             </div>
           ))}
         </div>
@@ -38,7 +39,7 @@ export function TwinStepwiseImages({ items, classes="" }) {
           <img
             src={items[1]?.imageSrc}
             alt={items[1]?.imageAlt}
-            className="w-full h-full object-cover shadow-lg"
+            className="w-[90%] h-full object-cover shadow-lg"
           />
         </div>
       </div>
@@ -53,15 +54,15 @@ export function TwinStepwiseImages({ items, classes="" }) {
                     alt={item.imageAlt}
                     className="h-[70vh] m-auto shadow-lg"
                   />
-                  <div className={`mt-10 text-white w-[80%] text-left`}>
+                  <div className={`mt-10 text-white w-[90%] text-left`}>
                     <div className={`flex items-end justify-start`}>
                       <div className='flex flex-col'>
                         <h2 className="text-xl font-bold pb-1">{item.title}</h2>
-                        <img src={"./line-break.png"} className="pb-1" />
+                        <img src={"./line-break.png"} className="pb-1 w-[55%]" />
                       </div>
                       <img src={item.iconSrc} alt={item.iconAlt} className="w-12 h-12 ml-3 p-1" />
                     </div>
-                    <p>{item.description}</p>
+                    <p className='content-color'>{item.description}</p>
                   </div>
 
                 </div>
@@ -79,11 +80,11 @@ export function TwinStepwiseImages({ items, classes="" }) {
               <div className={`flex items-end justify-start`}>
                 <div className='flex flex-col'>
                   <h2 className="text-xl font-bold pb-1">{items[0].title}</h2>
-                  <img src={"./line-break.png"} className="pb-1" />
+                  <img src={"./line-break.png"} className="pb-1 w-[55%]" />
                 </div>
                 <img src={items[0].iconSrc} alt={items[0].iconAlt} className="w-12 h-12 ml-3 p-1" />
               </div>
-              <p>{items[0].description}</p>
+              <p className='content-color' >{items[0].description}</p>
             </div>
           </div>
       }

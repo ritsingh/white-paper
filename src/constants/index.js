@@ -130,6 +130,9 @@ export const aboutUs = {
         title: "Explore more about your role"
     },
     forShipper: {
+        subscript: "For",
+        title: "Shipper",
+        description: "Supplier | Broker ",
         image: {
             labelSrc: './for-shipper-label.png',
             labelAlt: 'for-shipper-label',
@@ -138,6 +141,9 @@ export const aboutUs = {
         }
     },
     forCarrier: {
+        subscript: "For",
+        title: "Carrier",
+        description: "Dispatcher  | Company Carrier | Individual Carrier",
         image: {
             labelSrc: './for-carrier-label.png',
             labelAlt: 'for-carrier-label',
@@ -146,6 +152,9 @@ export const aboutUs = {
         }
     },
     forPilot: {
+        subscript: "For",
+        title: "Pilot",
+        description: "Pilot Catalyst | Company Catalyst | Pilot Dispatcher ",
         image: {
             labelSrc: './for-pilot-label.png',
             labelAlt: 'for-pilot-label',

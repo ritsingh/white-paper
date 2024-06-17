@@ -5,6 +5,7 @@ import { MdClose } from "react-icons/md";
 import MobileNav from "./MobileNav";
 import { WiDirectionUpRight, WiDirectionDownRight } from "react-icons/wi";
 
+
 function Header() {
   const [showNav, setShowNav] = useState(false);
   const [scroll, setScrolled] = useState(false);
@@ -23,14 +24,14 @@ function Header() {
   }, []);
   return (
     <>
-        <div
-      className={
-        scroll
-          ? "lg:w-4/5 xl:w-3/5 hidden lg:flex xl:flex fixed bottom-space items-center justify-between px-4 z-50 bg-opacity-20 backdrop-blur-lg drop-shadow-lg shadow-lg menu"
-          : "lg:w-4/5 xl:w-3/5 hidden lg:flex xl:flex items-center justify-between px-4 z-50 fixed bottom-space menu"
-      }
-    >
-      {/* <span className="capitalize md:w-1/3 lg:w-1/2 flex items-center justify-center py-5 px-2 relative">
+      <div
+        className={
+          scroll
+            ? "w-fit hidden lg:flex xl:flex fixed bottom-space items-center justify-between px-4 z-50 bg-opacity-20 backdrop-blur-lg drop-shadow-lg shadow-lg menu"
+            : "w-fit hidden lg:flex xl:flex items-center justify-between px-4 z-50 fixed bottom-space menu"
+        }
+      >
+        {/* <span className="capitalize md:w-1/3 lg:w-1/2 flex items-center justify-center py-5 px-2 relative">
         <h1
           className="cursor-pointer text-xl lg:text-3xl font-bold bg-gradient-to-r from-gray-50 to-blue-100 bg-clip-text text-transparent uppercase"
           onClick={() => navigate("/")}
@@ -38,77 +39,118 @@ function Header() {
           {name}
         </h1>
       </span> */}
-      <div className="w-full flex justify-center items-center text-white">
-        <ul className="flex flex space-x-2 gap-8 lg:gap-12">
-          <li className={ `border-r border-gray-500 lg:pr-5 relative group w-max ${selectedMenu === 0 ? 'hazmat-label' : ''}`}>
-            <Link
-              to={"/"}
-              onClick={() => setSelectedMenu(0)}
-              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg  before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
-            >
-              <span className="">About Us</span>
-              { selectedMenu === 0 ? 
-                (<WiDirectionDownRight />):
-                (<WiDirectionUpRight /> )
-              }
+        <div className="w-full flex justify-center items-center text-white">
+          <ul className="flex flex p-4 links-list">
+            <li className={`border-r border-gray-500 relative group w-max ${selectedMenu === 0 ? 'hazmat-label' : ''}`}>
+              <Link
+                to={"/"}
+                onClick={() => setSelectedMenu(0)}
+                className="flex items-center justify-center cursor-pointer text-base lg:text-xl  before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[0] before:bg-purple-500 group-hover:before:w-full"
+              >
+                <span className="">About Us</span>
+                {selectedMenu === 0 ?
+                  (<img
+                    src="./active-link.svg"
+                    alt="image 1"
+                    className="w-[33px] px-3"
+                  />) :
+                  (<img
+                    src="./inactive-link.svg"
+                    alt="image 1"
+                    className="w-[33px] px-3"
+                  />)
+                }
 
+              </Link>
+            </li>
+            <li className={`border-r border-gray-500 relative group w-max ${selectedMenu === 1 ? 'hazmat-label' : ''}`}>
+              <Link
+                to={"/carrier"}
+                onClick={() => setSelectedMenu(1)}
+                className="flex items-center justify-center cursor-pointer text-base lg:text-xl before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[0] before:bg-purple-500 group-hover:before:w-full"
+              >
+                <span className="">Carrier</span>
+                {selectedMenu === 1 ?
+                  (<img
+                    src="./active-link.svg"
+                    alt="image 1"
+                    className="w-[33px] px-3"
+                  />) :
+                  (<img
+                    src="./inactive-link.svg"
+                    alt="image 1"
+                    className="w-[33px] px-3"
+                  />)
+                }
             </Link>
-          </li>
-          <li className={ `border-r border-gray-500 lg:pr-5 relative group w-max ${selectedMenu === 1 ? 'hazmat-label' : ''}`}>
-            <Link
-              to={"/carrier"}
-              onClick={() => setSelectedMenu(1)}
-              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
-            >
-              <span className="">Carrier</span>
-              { selectedMenu === 1 ? 
-                (<WiDirectionDownRight />):
-                (<WiDirectionUpRight /> )
-              }
-            </Link>
-          </li>
-          <li className={ `border-r border-gray-500 lg:pr-5 relative group w-max ${selectedMenu === 2 ? 'hazmat-label' : ''}`}>
-            <Link
-              to={"/esang"}
-              onClick={() => setSelectedMenu(2)}
-              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg  before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
-            >
-              <span className="">Esang</span>
-              { selectedMenu === 2 ? 
-                (<WiDirectionDownRight />):
-                (<WiDirectionUpRight /> )
-              }
-            </Link>
-          </li>
-          <li className={ `border-r border-gray-500 lg:pr-5 relative group w-max ${selectedMenu === 3 ? 'hazmat-label' : ''}`}>
-            <Link
-              to={"/shipper"}
-              onClick={() => setSelectedMenu(3)}
-              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
-            >
-              <span className="">Shipper</span>
-              { selectedMenu === 3 ? 
-                (<WiDirectionDownRight />):
-                (<WiDirectionUpRight /> )
-              }
-            </Link>
-          </li>
-          <li className={ `relative group w-max ${selectedMenu === 4 ? 'hazmat-label' : ''}`}>
-            <Link
-              to={"/business-overview"}
-              onClick={() => setSelectedMenu(4)}
-              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
-            >
-              <span className="">Business Overview</span>
-              { selectedMenu === 4 ? 
-                (<WiDirectionDownRight />):
-                (<WiDirectionUpRight /> )
-              }
-            </Link>
-          </li>
-        </ul>
+            </li>
+            <li className={`border-r border-gray-500 relative group w-max ${selectedMenu === 2 ? 'hazmat-label' : ''}`}>
+              <Link
+                to={"/esang"}
+                onClick={() => setSelectedMenu(2)}
+                className="flex items-center justify-center cursor-pointer text-base lg:text-xl  before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[0] before:bg-purple-500 group-hover:before:w-full"
+              >
+                <span className="">Esang</span>
+                {selectedMenu === 2 ?
+                  (<img
+                    src="./active-link.svg"
+                    alt="image 1"
+                    className="w-[33px] px-3"
+                  />) :
+                  (<img
+                    src="./inactive-link.svg"
+                    alt="image 1"
+                    className="w-[33px] px-3"
+                  />)
+                }
+              </Link>
+            </li>
+            <li className={`border-r border-gray-500 relative group w-max ${selectedMenu === 3 ? 'hazmat-label' : ''}`}>
+              <Link
+                to={"/shipper"}
+                onClick={() => setSelectedMenu(3)}
+                className="flex  items-center justify-center cursor-pointer text-base lg:text-xl before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[0] before:bg-purple-500 group-hover:before:w-full"
+              >
+                <span className="">Shipper</span>
+                {selectedMenu === 3 ?
+                  (<img
+                    src="./active-link.svg"
+                    alt="image 1"
+                    className="w-[33px] px-3"
+                  />) :
+                  (<img
+                    src="./inactive-link.svg"
+                    alt="image 1"
+                    className="w-[33px] px-3"
+                  />)
+                }
+              </Link>
+            </li>
+            <li className={`relative group w-max ${selectedMenu === 4 ? 'hazmat-label' : ''}`}>
+              <Link
+                to={"/business-overview"}
+                onClick={() => setSelectedMenu(4)}
+                className="flex items-center justify-center cursor-pointer text-base lg:text-xl before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[0] before:bg-purple-500 group-hover:before:w-full"
+              >
+                <span className="">Business Overview</span>
+                {selectedMenu === 4 ?
+                  (<img
+                    src="./active-link.svg"
+                    alt="image 1"
+                    className="w-[33px] px-3"
+                  />) :
+                  (<img
+                    src="./inactive-link.svg"
+                    alt="image 1"
+                    className="w-[33px] px-3"
+                  />)
+                }
 
-        {/* <a
+              </Link>
+            </li>
+          </ul>
+
+          {/* <a
           href="https://github.com/riteshk-007/portfolio"
           target="_blank"
           rel="noreferrer"
@@ -117,10 +159,15 @@ function Header() {
           <DiGitBranch fontSize={20} />
           <AiFillStar fontSize={20} />
         </a> */}
+        </div>
       </div>
-    </div>
-      <span>
-        <div className="h-full top-5 right-5 lg:hidden flex items-center justify-end cursor-pointer relative z-[99]">
+      <div className="mob-nav md:hidden flex">
+        <img
+          src="./logo.svg"
+          alt="image 1"
+          className="w-[60px] px-3"
+        />
+        <div className="h-full right-5 lg:hidden flex items-center justify-end cursor-pointer relative z-[99]">
           {showNav ? (
             <MdClose
               fontSize={25}
@@ -136,7 +183,7 @@ function Header() {
           )}
           <MobileNav selectedMenu={selectedMenu} showNav={showNav} setShowNav={setShowNav} setSelectedMenu={setSelectedMenu} />
         </div>
-      </span>
+      </div>
     </>
   );
 }

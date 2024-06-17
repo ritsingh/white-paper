@@ -1,8 +1,8 @@
 import React from "react";
 
-function ContentHeader({ header, additionClass }) {
+function ContentHeader({ header, additionClass, customFont = "title" }) {
   return (
-    <div className={`w-full item-center title ${additionClass}`}>{header}</div>
+    <div className={`w-full item-center  ${additionClass} ${customFont}`}>{header}</div>
   );
 }
 

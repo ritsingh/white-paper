@@ -17,8 +17,8 @@ function CarrierSection({ data, customBgClass = "about-us-header-container", bg 
       <div className="flex flex-col p-10 w-full bg-black">
         <ContentBlock text={data.header.content} />
       </div>
-      <div className="flex flex-col h-full w-full bg-black">
-        <ContentHeader additionClass="text-center" header={data.challenges.title} />
+      <div className="flex flex-col h-full w-full bg-black md:mt-[5rem] mt-2">
+        <ContentHeader additionClass="text-center " header={data.challenges.title} />
         <br />
         <div className="flex md:flex-row flex-col h-full w-full bg-black md:p-10 px-8">
           < TwinContentBlock columns={data.challenges.columns} />
@@ -31,13 +31,13 @@ function CarrierSection({ data, customBgClass = "about-us-header-container", bg 
         <br />
       </div>
       <div className="flex flex-wrap p-10 w-full bg-black">
-        <TwinStepwiseImages items={data.keyFeatures.imageBlock0} classes={isCarrier ? "order-2 md:order-2" : "" } />
+        <TwinStepwiseImages items={data.keyFeatures.imageBlock0} classes={isCarrier ? "order-2 md:order-2 md:mt-[5rem] mt-[2rem]" : "md:mt-[5rem] mt-[2rem]" } />
         <br />
-        <TwinStepwiseImages items={data.keyFeatures.imageBlock} classes={isCarrier ? "order-3 md:order-3" : "" } />
+        <TwinStepwiseImages items={data.keyFeatures.imageBlock} classes={isCarrier ? "order-3 md:order-3 md:mt-[5rem] mt-[2rem]" : " md:mt-[5rem] mt-[2rem]" } />
         <br />
         {/* <TwinStepwiseImages items={data.keyFeatures.imageBlock1} /> */}
         {/* <div className="flex flex-col md:flex-row h-full relative w-full md:items-center about-us-header-container h-auto md:h-[85vh] stake-hoder-image-container justify-center p-10"> */}
-        <div className={`flex flex-col md:flex-row h-full relative w-full md:items-center stake-hoder-image-container justify-center ${isCarrier ? "order-1 md:order-1" : "" }}`}>
+        <div className={`flex flex-col md:flex-row h-full relative w-full md:items-center stake-hoder-image-container justify-evenly ${isCarrier ? "order-1 md:order-1" : "" }}`}>
           <div class="hidden lg:flex xl:flex">
             <img
               src={data.keyFeatures.info.image1.src}
@@ -67,21 +67,21 @@ function CarrierSection({ data, customBgClass = "about-us-header-container", bg 
               ]
             }
           />
-          <div className="flex flex-col md:w-[20%] w-full justify-center items-center text-center">
+          <div className="flex flex-col md:w-[30%] w-full justify-center items-center text-center">
             <div className='mb-10 text-white text-left'>
               <div className="flex justify-center items-center text-left mb-4">
-                <h2 className="text-xl font-bold">{data.keyFeatures.info.title}</h2>
-                <img src={data.keyFeatures.info.iconSrc} alt={data.keyFeatures.info.iconAlt} className="w-8 h-8 ml-2" />
+                <h2 className="text-3xl text-xl font-bold">{data.keyFeatures.info.title}</h2>
+                <img src={data.keyFeatures.info.iconSrc} alt={data.keyFeatures.info.iconAlt} className="w-20 h-20 ml-3 p-1" />
               </div>
-              <img src={"./line-break.png"} className="pb-1" />
-              <p>{data.keyFeatures.info.description}</p>
+              <img src={"./line-break.png"} className="pb-1 w-[55%]" />
+              <p className="content-color">{data.keyFeatures.info.description}</p>
             </div>
           </div>
         </div>
 
         <br />
       </div>
-      <div className="flex flex-col h-full w-full bg-black">
+      <div className="flex flex-col h-full w-full bg-black md:mt-[5rem] mt-[2rem] ">
         <div className="flex stretch bg-cover justify-center items-center">
           <ContentHeader additionClass="text-center" header={"Technlogy Stack"} />
         </div>

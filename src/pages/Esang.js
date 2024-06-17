@@ -20,13 +20,13 @@ function Esang() {
         <div className="flex flex-col h-full w-full bg-black order-1 md:order-1 ">
           <div className="flex h-full relative w-full flex-col md:flex-row md:items-start about-us-header-container stake-hoder-image-container justify-around p-10">
             {esang.contentBlock1.map((content, index) => (
-              <div className="flex flex-col md:w-[22%] w-[100%] justify-center items-center text-left">
+              <div className="flex flex-col md:w-[32%] w-[100%] justify-center items-center text-left">
                 <div className='mb-10 text-white'>
                   <div className="flex justify-left items-center mb-2">
-                    <h2 className="text-xl font-bold">{content.title}</h2>
+                    <h2 className="subtitle-font font-bold md:w-[50%] w-full">{content.title}</h2>
                   </div>
-                  <img src={"./line-break.png"} className="pb-1" />
-                  <p>{content.content}</p>
+                  <img src={"./line-break.png"} className="pb-1  w-[55%]" />
+                  <p className="content-color">{content.content}</p>
                 </div>
               </div>
             ))}
@@ -35,13 +35,13 @@ function Esang() {
         <div className="flex flex-col h-full w-full bg-black order-3 md:order-2">
           <div className="flex h-full relative w-full md:items-start mt-0 flex-col md:flex-row about-us-header-container stake-hoder-image-container justify-around p-10">
             {esang.contentBlock2.map((content, index) => (
-              <div className="flex flex-col md:w-[22%] w-[100%] justify-center items-center text-left">
+              <div className="flex flex-col md:w-[32%] w-[100%] justify-center items-center text-left">
                 <div className='mb-10 text-white'>
                   <div className="flex justify-left items-center mb-2">
-                    <h2 className="text-xl font-bold">{content.title}</h2>
+                    <h2 className="subtitle-font font-bold md:w-[70%] w-full">{content.title}</h2>
                   </div>
-                  <img src={"./line-break.png"} className="pb-1" />
-                  <p>{content.content}</p>
+                  <img src={"./line-break.png"} className="pb-1 w-[55%]" />
+                  <p className="content-color" >{content.content}</p>
                 </div>
               </div>
             ))}

@@ -7,7 +7,7 @@ function BusinessOverview() {
   return (
     <>
       <div className="p-5 md:p-10 bg-contain bg-center bg-no-repeat h-screen w-screen relative bg-[url(../public/bo-bg.png)] h-2/3 flex md:items-center bo-bg justify-center md:justify-start">
-        <div className="flex md:flex-row items-center ml-0 pt-[20%] md:pt-0 flex-col ">
+        <div className="flex md:flex-row items-center ml-0 justify-center md:justify-start md:pt-0 flex-col ">
           <span className="text-white text-64px font-bold leading-80px gradient-font label-codec md:w-[50%] w-full text-center md:text-left ">{bo.title}<br /></span>
           <div className="flex flex-col md:w-[50%] w-full items-center md:items-start md:mt-0 mt-[10%]">
             <span className="md:text-6xl text-4xl text-md leading-80px font-Codec-Cold-Trial ">{bo.subTitle}</span>
@@ -16,7 +16,7 @@ function BusinessOverview() {
               alt={bo.imageAlt}
               className="md:h-full bg-cover w-full"
             />
-            <h2 className="text-md text-center w-full pb-1 subtitle">{bo.visionCaption}</h2>
+            <h2 className="text-md text-center md:text-left w-full pb-1 subtitle">{bo.visionCaption}</h2>
           </div>
         </div>
       </div>
@@ -26,7 +26,7 @@ function BusinessOverview() {
       <div className="flex flex-col h-full w-full bg-black">
         <ContentHeader additionClass="text-center" header={bo.marketoppotunities.title} />
         {/* <br /> */}
-        <h2 className="text-md text-center w-full pb-1">{bo.marketoppotunities.text}</h2>
+        <h2 className="text-md text-center w-full pb-1 subtitle">{bo.marketoppotunities.text}</h2>
         <br />
         <div className="flex h-full relative w-full md:items-center stake-hoder-image-container justify-center md:p-10 px-5">
           <img
@@ -54,14 +54,14 @@ function BusinessOverview() {
         <h2 className="text-md text-center w-[70%] pb-1 subtitle">{bo.contentBlock1.description}</h2>
         <div className="flex h-full relative w-full flex-col md:flex-row md:items-center stake-hoder-image-container justify-around p-10">
           {bo.contentBlock1.blocks.map((content, index) => (
-            <div className="flex flex-col md:w-[27%] w-full justify-center items-center text-left">
+            <div className="flex flex-col md:w-[32%] w-full justify-center items-center text-left">
               <div className='mb-10 text-white'>
                 <div className="flex justify-left items-center">
-                  <h2 className="text-xl font-bold md:w-[190px] w-full">{content.title}</h2>
-                  <img src={content.iconSrc} alt={content.iconAlt} className="w-14 h-14 ml-[10%]" />
+                  <h2 className="subtitle-font font-bold md:w-[60%] w-full">{content.title}</h2>
+                  <img src={content.iconSrc} alt={content.iconAlt} className="w-20 h-20 ml-3 p-1" />
                 </div>
-                <img src={"./line-break.png"} className="pb-1" />
-                <p>{content.content}</p>
+                <img src={"./line-break.png"} className="pb-1 w-[55%]" />
+                <p className="content-color">{content.content}</p>
               </div>
             </div>
           ))}
@@ -73,14 +73,14 @@ function BusinessOverview() {
         <h2 className="text-md text-center w-[70%] pb-1 subtitle">{bo.contentBlock2.description}</h2>
         <div className="flex h-full relative w-full flex-col md:flex-row  md:items-center stake-hoder-image-container justify-around p-10">
           {bo.contentBlock2.blocks.map((content, index) => (
-            <div className="flex flex-col md:w-[27%] w-full justify-center items-center text-left">
+            <div className="flex flex-col md:w-[32%] w-full justify-center items-center text-left">
               <div className='mb-10 text-white'>
                 <div className="flex justify-left items-center">
-                  <h2 className="text-xl font-bold md:w-[190px] w-full">{content.title}</h2>
-                  <img src={content.iconSrc} alt={content.iconAlt} className="w-14 h-14 ml-[10%]" />
+                  <h2 className="subtitle-font font-bold md:w-[60%] w-full">{content.title}</h2>
+                  <img src={content.iconSrc} alt={content.iconAlt} className="w-20 h-20 ml-3 p-1" />
                 </div>
-                <img src={"./line-break.png"} className="pb-1" />
-                <p>{content.content}</p>
+                <img src={"./line-break.png"} className="pb-1 w-[55%]" />
+                <p className="content-color">{content.content}</p>
               </div>
             </div>
           ))}
@@ -93,14 +93,14 @@ function BusinessOverview() {
         <div className="flex h-full flex-col relative w-full  md:items-center stake-hoder-image-container justify-around p-10">
           {bo.contentBlock4.blocks.map((content, index) => (
             <div className={`flex w-full ${index == 1 ? "justify-center" : index == 2 ? "justify-end" : ""}`}>
-              <div className="flex flex-col md:w-[38%] w-full justify-center items-center text-left">
+              <div className="flex flex-col md:w-[60%] w-full justify-center items-center text-left">
                 <div className='mb-10 text-white'>
                   <div className="flex justify-left items-center">
-                    <h2 className="text-xl font-bold md:w-[190px] w-full">{content.title}</h2>
-                    <img src={content.iconSrc} alt={content.iconAlt} className="w-14 h-14 ml-[10%]" />
+                    <h2 className="subtitle-font font-bold md:w-[50%] w-full">{content.title}</h2>
+                    <img src={content.iconSrc} alt={content.iconAlt} className="w-20 h-20 ml-3 p-1" />
                   </div>
-                  <img src={"./line-break.png"} className="pb-1" />
-                  <p>{content.content}</p>
+                  <img src={"./line-break.png"} className="pb-1 w-[55%]" />
+                  <p  className="content-color">{content.content}</p>
                 </div>
               </div>
             </div>
@@ -112,22 +112,22 @@ function BusinessOverview() {
         <div className="flex flex-wrap p-10 items-center w-full bg-black">
           <div className="md:w-1/2 w-full order-2 md:order-1 ">
             {bo.longTermVision.content.map((content, index) => (
-              <div className="w-full p-4 justify-center items-center">
+              <div className="w-full py-4 justify-center items-center">
                 <div className="flex">
-                  <h2 className="text-xl md:w-[190px] w-full font-bold">{content.title}</h2>
-                  <img src={content.iconSrc} alt={content.iconAlt} className="w-14 h-14 ml-[10%]" />
+                  <h2 className="subtitle-font md:w-[50%] w-full font-bold">{content.title}</h2>
+                  <img src={content.iconSrc} alt={content.iconAlt} className="w-20 h-20 ml-3 p-1" />
                 </div>
-                <img src={"./line-break.png"} className="pb-1" />
+                <img src={"./line-break.png"} className="pb-1 w-[55%]" />
                 <br />
                 <div className="flex items-center">
                   <div className="w-[1590px] content">
-                    <p>{content.content}</p>
+                    <p className="content-color">{content.content}</p>
                   </div>
                 </div>
               </div>
             ))}
           </div>
-          <div className=" w-full md:w-1/2 p-0 md:p-4 justify-center items-center order-1 md:order-2">
+          <div className=" w-full md:w-1/2 p-0 md:py-4 justify-center items-center order-1 md:order-2">
             <img
               src={bo.longTermVision.imageBlock.src}
               alt={bo.longTermVision.imageBlock.alt}
@@ -141,14 +141,14 @@ function BusinessOverview() {
         {/* <br /> */}
         <div className="flex h-full relative w-full md:items-center flex-col md:flex-row stake-hoder-image-container justify-around p-10">
           {bo.contentBlock3.blocks.map((content, index) => (
-            <div className="flex flex-col md:w-[27%] w-full justify-center items-center text-left">
+            <div className="flex flex-col md:w-[32%] w-full justify-center items-center text-left">
               <div className='mb-10 text-white'>
                 <div className="flex justify-left items-center">
-                  <h2 className="text-xl font-bold md:w-[190px] w-full">{content.title}</h2>
-                  <img src={content.iconSrc} alt={content.iconAlt} className="w-14 h-14 ml-[10%]" />
+                  <h2 className="subtitle-font font-bold md:w-[50%] w-full">{content.title}</h2>
+                  <img src={content.iconSrc} alt={content.iconAlt} className="w-20 h-20 ml-3 p-1" />
                 </div>
-                <img src={"./line-break.png"} className="pb-1" />
-                <p>{content.content}</p>
+                <img src={"./line-break.png"} className="pb-1 w-[55%]" />
+                <p className="content-color">{content.content}</p>
               </div>
             </div>
           ))}
