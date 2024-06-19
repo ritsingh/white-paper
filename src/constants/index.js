@@ -289,7 +289,7 @@ export const shipper = {
                 imageAlt: 'Image 2',
                 iconSrc: './shipper-icon-2.svg',
                 iconAlt: 'Icon-2',
-                title: 'Load managment',
+                title: 'Load management',
                 description: 'Seamlessly manage all your loads in one place. From pending to scheduled and in-progress shipments, easily keep track of their status.'
             }
         ],
@@ -340,7 +340,7 @@ export const shipper = {
             },
             iconSrc: './shipper-icon-5.svg',
             iconAlt: 'Icon-5',
-            title: 'Bid request managment',
+            title: 'Bid request management',
             description: 'Choose the bid that best suits your requirements. Whether you opt to accept a bid or negotiate by making a counteroffer, enjoy the flexibility to make decisions that align with your shipping priorities.'
           },
         technologySection: {
@@ -566,7 +566,7 @@ export const bo = {
         imageAlt: 'Business Model',
     },
     eusotripAdvantage: {
-        title: 'EusoTrip Advantange',
+        title: 'EusoTrip Advantage',
         imageSrc: './bo-eusotrip-advantage-image.png',
         imageAlt: 'Eusotrip Advantage',
     },

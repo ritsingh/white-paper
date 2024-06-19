@@ -1,7 +1,7 @@
 import React from "react";
 import ContentBlock from "../components/ContentBlock";
 import ContentHeader from "../components/ContentHeader";
-import { bo, esang } from "../constants";
+import { bo } from "../constants";
 import GradientBlock from "../components/GradientBlock";
 
 function BusinessOverview() {

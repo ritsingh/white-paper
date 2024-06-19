@@ -86,7 +86,7 @@ function CarrierSection({ data, customBgClass = "about-us-header-container", bg 
       </div>
       <div className="flex flex-col h-full w-full relative md:mt-[5rem] mt-[2rem] ">
         <div className="flex stretch bg-cover justify-center items-center">
-          <ContentHeader additionClass="text-center" header={"Technlogy Stack"} />
+          <ContentHeader additionClass="text-center" header={"Technology Stack"} />
         </div>
         <br />
         <div className="hidden lg:flex xl:flex  flex h-full relative w-full md:items-center stake-hoder-image-container justify-center p-10">
