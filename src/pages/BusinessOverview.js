@@ -51,17 +51,17 @@ function BusinessOverview() {
         <ContentBlock text={bo.painPoints.content} />
         <br />
       </div>
-      <div className="flex flex-col h-full w-full relative items-center">
+      <div className="flex flex-col h-full w-full relative items-center px-4 md:px-10">
         <ContentHeader additionClass="text-center" header={bo.contentBlock1.title} />
         {/* <br /> */}
         <h2 className="text-md text-center w-[70%] pb-1 subtitle">{bo.contentBlock1.description}</h2>
-        <div className="flex h-full relative w-full flex-col md:flex-row md:items-center stake-hoder-image-container justify-around p-10">
+        <div className="flex h-full relative w-full flex-col md:flex-row md:items-baseline stake-hoder-image-container justify-around p-10">
           {bo.contentBlock1.blocks.map((content, index) => (
-            <div className="flex flex-col md:w-[32%] w-full justify-center items-center text-left">
+            <div className="flex flex-col md:w-[31%] w-full justify-center items-center text-left">
               <div className='mb-10 text-white'>
                 <div className="flex justify-left items-center">
-                  <h2 className="subtitle-font font-bold md:w-[60%] w-full">{content.title}</h2>
-                  <img src={content.iconSrc} alt={content.iconAlt} className="w-20 h-20 ml-3 p-1" />
+                  <h2 className="subtitle-font font-bold md:w-[50%] w-full">{content.title}</h2>
+                  <img src={content.iconSrc} alt={content.iconAlt} className="w-20 h-20 ml-12 p-1" />
                 </div>
                 <img src={"./line-break.png"} className="pb-1 w-[55%]" />
                 <p className="content-color">{content.content}</p>
@@ -77,11 +77,11 @@ function BusinessOverview() {
         <h2 className="text-md text-center w-[70%] pb-1 subtitle">{bo.contentBlock2.description}</h2>
         <div className="flex h-full relative w-full flex-col md:flex-row  md:items-center stake-hoder-image-container justify-around p-10">
           {bo.contentBlock2.blocks.map((content, index) => (
-            <div className="flex flex-col md:w-[32%] w-full justify-center items-center text-left">
+            <div className="flex flex-col md:w-[31%] w-full justify-center items-center text-left">
               <div className='mb-10 text-white'>
                 <div className="flex justify-left items-center">
-                  <h2 className="subtitle-font font-bold md:w-[60%] w-full">{content.title}</h2>
-                  <img src={content.iconSrc} alt={content.iconAlt} className="w-20 h-20 ml-3 p-1" />
+                  <h2 className="subtitle-font font-bold md:w-[41%] w-full">{content.title}</h2>
+                  <img src={content.iconSrc} alt={content.iconAlt} className="w-20 h-20 ml-12 p-1" />
                 </div>
                 <img src={"./line-break.png"} className="pb-1 w-[55%]" />
                 <p className="content-color">{content.content}</p>
@@ -113,8 +113,8 @@ function BusinessOverview() {
       </div>
       <div className="flex flex-col h-full w-full ">
         <ContentHeader additionClass="text-center" header={bo.longTermVision.title} />
-        <div className="flex flex-wrap p-10 items-center w-full">
-          <div className="md:w-1/2 w-full order-2 md:order-1 ">
+        <div className="flex flex-wrap p-10 items-center w-full justify-between">
+          <div className="md:w-[48%] w-full order-2 md:order-1 ">
             {bo.longTermVision.content.map((content, index) => (
               <div className="w-full py-4 justify-center items-center">
                 <div className="flex">
@@ -131,7 +131,7 @@ function BusinessOverview() {
               </div>
             ))}
           </div>
-          <div className=" w-full md:w-1/2 p-0 md:py-4 justify-center items-center order-1 md:order-2">
+          <div className=" w-full md:w-[48%] p-0 md:py-4 justify-center items-center order-1 md:order-2">
             <img
               src={bo.longTermVision.imageBlock.src}
               alt={bo.longTermVision.imageBlock.alt}
@@ -203,7 +203,7 @@ function BusinessOverview() {
             <div className="flex justify-left items-center flex-col mt-[2rem] md:mt-[1rem]">
               <h2 className="subtitle-font md:w-[60%] w-full text-white text-center pl-5 justify-center md:hidden flex">{"EusoTrip"}</h2>
               <div className="flex md:flex-row flex-col">
-                <img src={"./c-analysis-3.png"} alt={"c-analysis-3"} className="hidden md:flex w-10" />
+                <img src={"./c-analysis-3.png"} alt={"c-analysis-3"} className="hidden md:flex w-14" />
                 <img src={"./c-analysis-3-mob.png"} alt={"c-analysis-3"} className="md:hidden flex w-full" />
                 <div className="content-color ">
                   <h2 className="hidden md:flex subtitle-font md:w-[60%] w-full text-white pl-5 pt-9">{"EusoTrip"}</h2>
@@ -317,7 +317,7 @@ function BusinessOverview() {
 
         </div>
       </div>
-      <div className="flex flex-col h-full w-full">
+      <div className="flex flex-col h-full w-full mt-8 md:mt-2">
         <ContentHeader additionClass="text-center" header={bo.eusotripAdvantage.title} />
         {/* <br /> */}
         <div className="flex h-full relative w-full md:items-center stake-hoder-image-container justify-center md:p-10 px-4 py-5">
@@ -328,13 +328,13 @@ function BusinessOverview() {
           />
         </div>
       </div>
-      <div className="flex flex-col h-full w-full relative">
+      <div className="flex flex-col h-full w-full relative mt-8 md:mt-2">
         <ContentHeader additionClass="text-center" header={bo.financialProjection.title} />
         <br />
         <div className="flex flex-col md:flex-row h-full relative w-full md:items-start stake-hoder-image-container justify-evenly p-5 md:p-10">
           {/* {bo.financialProjection.imageBlock.map((image, index) => ( */}
           <div className="md:w-[47%] w-full flex-col flex items-center ">
-            <h2 className="subtitle-font font-bold text-center w-full pb-6">Eusotrip 5 - year financial projections</h2>
+            <h2 className="subtitle-font font-bold text-center w-full pb-6">Eusotrip 5 - Year Financial Projections</h2>
             <div className="flex flex-col relative">
               <img
                 src={bo.financialProjection.imageBlock[0].imageSrc}
@@ -349,7 +349,7 @@ function BusinessOverview() {
 
           </div>
           <div className="md:w-[47%] w-full flex-col flex items-center md:pt-0 pt-12">
-            <h2 className="subtitle-font font-bold text-center w-full pb-6">Path to sustainable growth</h2>
+            <h2 className="subtitle-font font-bold text-center w-full pb-6">Operating Expenses</h2>
             <img
               src={bo.financialProjection.imageBlock[1].imageSrc}
               alt={bo.financialProjection.imageBlock[1].imageAlt}
@@ -371,7 +371,7 @@ function BusinessOverview() {
         <div className="flex flex-col md:flex-row h-full relative w-full md:items-start stake-hoder-image-container justify-evenly p-5 md:p-10">
           {/* {bo.financialProjection.imageBlock.map((image, index) => ( */}
           <div className="md:w-[47%] w-full flex-col flex items-center">
-            <h2 className="subtitle-font font-bold text-center w-full md:pb-[8rem] pb-8">profitability Estimates</h2>
+            <h2 className="subtitle-font font-bold text-center w-full md:pb-[8rem] pb-8">Profitability Estimates</h2>
             <img
               src={bo.financialProjection.imageBlock1[0].imageSrc}
               alt={bo.financialProjection.imageBlock1[0].imageAlt}
@@ -382,7 +382,7 @@ function BusinessOverview() {
             </ul>
           </div>
           <div className="md:w-[47%] w-full flex-col flex items-center md:pt-0 pt-12">
-            <h2 className="subtitle-font font-bold text-center w-full pb-6">Operating Expenses</h2>
+            <h2 className="subtitle-font font-bold text-center w-full pb-6">Path To Sustainable Growth</h2>
             <img
               src={bo.financialProjection.imageBlock1[1].imageSrc}
               alt={bo.financialProjection.imageBlock1[1].imageAlt}
@@ -405,7 +405,7 @@ function BusinessOverview() {
         <div className="flex flex-col md:flex-row h-full relative w-full md:items-start stake-hoder-image-container justify-evenly p-5 md:p-10">
           {/* {bo.financialProjection.imageBlock.map((image, index) => ( */}
           <div className="md:w-[47%] w-full flex-col flex items-center">
-            <h2 className="subtitle-font font-bold text-center w-full pb-[3rem]">Subscription revenue growth over 5 years</h2>
+            <h2 className="subtitle-font font-bold text-center w-full pb-[3rem]">Subscription Revenue Growth Over 5 Years</h2>
             <img
               src={bo.financialProjection.imageBlock2[0].imageSrc}
               alt={bo.financialProjection.imageBlock2[0].imageAlt}
@@ -415,7 +415,7 @@ function BusinessOverview() {
           </div>
         </div>
         <div className="flex h-full flex-col relative w-full md:items-center stake-hoder-image-container justify-around p-5 md:p-10 z-10">
-          <h2 className="subtitle-font font-bold text-center w-full pb-1">Subscription revenue growth over 5 years</h2>
+          <h2 className="subtitle-font font-bold text-center w-full pb-1">Summary Table</h2>
           <div className="overflow-x-auto w-full flex justify-center">
             <img
               src={bo.financialProjection.imageBlock3[0].imageSrc}

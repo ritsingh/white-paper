@@ -7,8 +7,8 @@ function MobileNav({ selectedMenu, showNav, setShowNav, setSelectedMenu }) {
     <div
       className={
         showNav
-          ? "fixed top-0 h-full bg-black w-full top-[68px] left-0 rounded-b-md border-2 border-t-0 border-purple-700 transition-all duration-[500ms] overflow-hidden z-[-1]"
-          : "fixed h-0 bg-black w-full top-[68px] left-0 rounded-b-md transition-all duration-[500ms] overflow-hidden z-[-1]"
+          ? "fixed top-0 h-full bg-black w-full top-[60px] left-0 rounded-b-md border-2 border-t-0 border-purple-700 transition-all duration-[500ms] overflow-hidden z-[-1]"
+          : "fixed h-0 bg-black w-full top-[60px] left-0 rounded-b-md transition-all duration-[500ms] overflow-hidden z-[-1]"
       }
     >
       <div className=" block items-center m-10 text-white">

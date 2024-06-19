@@ -90,6 +90,18 @@ function Header() {
                 onClick={() => setSelectedMenu(2)}
                 className="flex items-center justify-center cursor-pointer text-base lg:text-xl  before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[0] before:bg-purple-500 group-hover:before:w-full"
               >
+                {selectedMenu === 2 ?
+                  (<img
+                    src="./esang-sel.png"
+                    alt="image 1"
+                    className="w-[33px] p-2"
+                  />) :
+                  (<img
+                    src="./esang.png"
+                    alt="image 1"
+                    className="w-[33px] p-2"
+                  />)
+                }
                 <span className="">Esang</span>
                 {selectedMenu === 2 ?
                   (<img

@@ -12,7 +12,7 @@ function CarrierSection({ data, customBgClass = "about-us-header-container", bg 
     <>
       <div className={`bg-contain bg-center bg-no-repeat h-screen w-screen relative ${bg} h-2/3 flex md:items-center ${customBgClass}`}>
         <div className={`p-10  flex flex-col ml-0 about-us-header ${bgText}`}>
-          <span className="text-white text-64px font-bold leading-80px gradient-font font-Codec-Cold-Trial label-codec">{data.title}<br /></span>
+          <span className="text-white text-64px font-bold leading-80px gradient-font-sub font-Codec-Cold-Trial label-codec">{data.title}<br /></span>
           <span className={`md:text-3xl  ${isCarrier ? "w-[170px] md:w-full" : "w-100"  }   text-sm leading-80px font-Codec-Cold-Trial`}>{data.subTitle}</span>
         </div>
       </div>
@@ -23,7 +23,7 @@ function CarrierSection({ data, customBgClass = "about-us-header-container", bg 
       <div className="flex flex-col h-full w-full md:mt-[5rem] mt-2 relative">
         <ContentHeader additionClass="text-center " header={data.challenges.title} />
         <br />
-        <div className="flex md:flex-row flex-col h-full w-full md:p-10 px-8">
+        <div className="flex md:flex-row flex-col h-full w-full md:p-10 px-8 justify-between">
           < TwinContentBlock columns={data.challenges.columns} />
         </div>
       </div>
@@ -40,8 +40,6 @@ function CarrierSection({ data, customBgClass = "about-us-header-container", bg 
         <br />
         <TwinStepwiseImages items={data.keyFeatures.imageBlock} classes={isCarrier ? "order-3 md:order-3 md:mt-[5rem] mt-[2rem]" : " md:mt-[5rem] mt-[2rem]" } />
         <br />
-        {/* <TwinStepwiseImages items={data.keyFeatures.imageBlock1} /> */}
-        {/* <div className="flex flex-col md:flex-row h-full relative w-full md:items-center about-us-header-container h-auto md:h-[85vh] stake-hoder-image-container justify-center p-10"> */}
         <div className={`flex flex-col md:flex-row h-full relative w-full md:items-center stake-hoder-image-container justify-evenly ${isCarrier ? "order-1 md:order-1" : "" }}`}>
           <div class="hidden lg:flex xl:flex">
             <img
@@ -91,7 +89,7 @@ function CarrierSection({ data, customBgClass = "about-us-header-container", bg 
           <ContentHeader additionClass="text-center" header={"Technlogy Stack"} />
         </div>
         <br />
-        <div className="hidden lg:flex xl:flex  flex h-full relative w-full md:items-center about-us-header-container stake-hoder-image-container justify-center p-10">
+        <div className="hidden lg:flex xl:flex  flex h-full relative w-full md:items-center stake-hoder-image-container justify-center p-10">
           <img
             src={data.keyFeatures.technologySection.image1.src}
             alt={data.keyFeatures.technologySection.image1.alt}

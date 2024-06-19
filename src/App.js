@@ -10,11 +10,11 @@ import Esang from "./pages/Esang";
 import BusinessOverview from "./pages/BusinessOverview";
 function App() {
   return (
-    <div className="bg-black from-slate-900 via-purple-900 to-slate-900 pb-24">
+    <div className="bg-black from-slate-900 via-purple-900 to-slate-900">
       <img
         src="./logo.svg"
         alt="image 1"
-        className="header-logo p-10 hidden lg:block md:block"
+        className="header-logo p-7 hidden lg:block md:block"
       />
       <img
         src="./side-float.png"
@@ -32,7 +32,7 @@ function App() {
           <Route exact path="/business-overview" element={<BusinessOverview />} />
         </Routes>
       </Router>
-      {/* <Footer />*/}
+      <Footer />
     </div>
   );
 }

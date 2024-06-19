@@ -14,8 +14,8 @@ function AboutUs() {
       <div className="bg-center bg-no-repeat w-full h-[110vh] relative bg-[url(../public/about-us-bg.png)] h-2/3 flex md:items-center about-us-header-container">
         {/* <div className="w-653px   about-us-header"> */}
         <div className="p-10 m-0 about-us-header">
-          <span className="text-white text-64px font-light leading-80px font-Codec-Cold-Trial tracking-tight label-codec">Brand New <br />Digital Map For<br /></span>
-          <span className="text-6xl gradient-font font-bold leading-80px font-Codec-Cold-Trial tracking-tight label-codec">HazMat Logistics</span>
+          <div className="text-white text-64px font-light leading-80px font-Codec-Cold-Trial tracking-tight label-codec">Brand New <br />Digital Map For<br /></div>
+          <div className="text-6xl gradient-font font-bold leading-80px font-Codec-Cold-Trial tracking-tight label-codec">HazMat Logistics</div>
         </div>
       </div>
       <div className="flex flex-col p-10 w-full bg-black executiveSumary">
@@ -151,7 +151,7 @@ function AboutUs() {
           <div className="text-left">
             <div className={`w-full item-center title !text-left`}>{aboutUs.forShipper.subscript}</div>
             <div className={`w-full item-center shipper-txt`}>{aboutUs.forShipper.title}</div>
-            <div className={`w-full item-center subtitle`}>{aboutUs.forShipper.description}</div>
+            <div className={` item-center subtitle w-[70%]`}>{aboutUs.forShipper.description}</div>
           </div>
           {/* <img
             src={aboutUs.forShipper.image.labelSrc}
@@ -169,7 +169,7 @@ function AboutUs() {
           <div className="text-left">
             <div className={`w-full item-center title !text-left`}>{aboutUs.forCarrier.subscript}</div>
             <div className={`w-full item-center shipper-txt`}>{aboutUs.forCarrier.title}</div>
-            <div className={`w-full item-center subtitle`}>{aboutUs.forCarrier.description}</div>
+            <div className={`item-center subtitle w-[70%]`}>{aboutUs.forCarrier.description}</div>
           </div>
           {/* <img
             src={aboutUs.forCarrier.image.labelSrc}
@@ -187,7 +187,7 @@ function AboutUs() {
           <div className="text-left">
             <div className={`w-full item-center title !text-left`}>{aboutUs.forPilot.subscript}</div>
             <div className={`w-full item-center shipper-txt`}>{aboutUs.forPilot.title}</div>
-            <div className={`w-full item-center subtitle`}>{aboutUs.forPilot.description}</div>
+            <div className={`item-center subtitle w-[70%]`}>{aboutUs.forPilot.description}</div>
           </div>
           {/* <img
             src={aboutUs.forPilot.image.labelSrc}

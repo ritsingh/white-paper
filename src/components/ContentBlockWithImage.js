@@ -10,7 +10,7 @@ function ContentBlockWithImage({ title, text, image, classes, commonPadding = "p
   ));
   return (
     <>
-      <ContentHeader additionClass="text-left" header={title}/>
+      <ContentHeader additionClass="text-left mb-2" header={title}/>
       <div className={`w-full md:w-1/2 ${commonPadding} justify-center items-center order-2 md:order-1`}>
         <br />
         <div className="flex items-center">

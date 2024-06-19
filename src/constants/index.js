@@ -102,7 +102,7 @@ export const aboutUs = {
                 imageAlt: 'Image-4',
                 iconSrc: './wwh-group-1-icon-6.svg',
                 iconAlt: 'Icon-4',
-                title: 'Reducing Delays',
+                title: 'Reducing delays',
                 description: 'EusoTrip’s Esang AI-driven real-time planning and route optimization reduce idle time, ensure compliance with HazMat restrictions, and save carriers up to 20% on fuel  costs while cutting transit times by up to 15%'
             },
             {
@@ -110,7 +110,7 @@ export const aboutUs = {
                 imageAlt: 'Image-5',
                 iconSrc: './wwh-group-1-icon-7.svg',
                 iconAlt: 'Icon-5',
-                title: 'Simplifying Compliance',
+                title: 'Simplifying compliance',
                 description: 'The platform automates documentation and compliance, reducing carriers admin burden and improving safety. It decreases delays by 30% and reduces fines by ensuring regulation compliance.'
             }
         ],
@@ -120,7 +120,7 @@ export const aboutUs = {
                 imageAlt: 'Image-4',
                 iconSrc: './wwh-group-1-icon-8.svg',
                 iconAlt: 'Icon-4',
-                title: 'Cost Control',
+                title: 'Cost control',
                 description: 'EusoTrip’s transparent pricing and efficient route planning boost earnings, cut fuel use, and reduce expenses, increasing carriers profitability by up to 10%.'
             }
         ],
@@ -254,7 +254,7 @@ export const carrier = {
 
 export const shipper = {
     title: 'Shipper',
-    subTitle: 'Supplier | Broker',
+    subTitle: 'Supplier - Marketer | Broker',
     header: {
         content: 'Our platform transforms the logistics landscape, offering a seamless and efficient way to transport goods. Whether you are a small business or a large enterprise, EusoTrip connects you to a vast network of trusted carriers and state-of-the-art technology, optimizing your supply chain. EusoTrip simplifies the shipping process with transparent pricing, real-time tracking, and effortless communication. By harnessing our technology, shippers can effortlessly book, track, and manage shipments, saving time and cutting costs. Join the community of shippers who rely on EusoTrip for safe and efficient delivery. Discover the future of freight logistics with EusoTrip – where shipping meets simplicity'
     },
@@ -281,7 +281,7 @@ export const shipper = {
                 imageAlt: 'Image 1',
                 iconSrc: './shipper-icon-1.svg',
                 iconAlt: 'Icon 1',
-                title: 'EASY SHIPMENT CREATING',
+                title: 'Easy shipment creating',
                 description: ' Effortlessly create shipments by providing all necessary information in one intuitive interface.'
             },
             {
@@ -289,7 +289,7 @@ export const shipper = {
                 imageAlt: 'Image 2',
                 iconSrc: './shipper-icon-2.svg',
                 iconAlt: 'Icon-2',
-                title: 'Load MANAGMENT',
+                title: 'Load managment',
                 description: 'Seamlessly manage all your loads in one place. From pending to scheduled and in-progress shipments, easily keep track of their status.'
             }
         ],
@@ -299,7 +299,7 @@ export const shipper = {
                 imageAlt: 'Image 3',
                 iconSrc: './bo-icon-15.svg',
                 iconAlt: 'Icon-2',
-                title: 'WAREHOUSE ADDRESS',
+                title: 'Warehouse address',
                 description: 'Streamlined Shipment Creation Simplify the shipment creation process by utilizing your warehouse addresses from  "My Facility Book." No need to enter address details manually each time; simply select the warehouse address you have added, saving time and reducing errors.'
             },
             {
@@ -307,7 +307,7 @@ export const shipper = {
                 imageAlt: 'Image 4',
                 iconSrc: './shipper-icon-4.svg',
                 iconAlt: 'Icon-4',
-                title: 'EFFICIENT CARGO HANDLING',
+                title: 'Efficient cargo handling',
                 description: 'Manage large volumes of materials with ease. By visualizing multiple filled trailers, you can effectively plan and coordinate the transportation of your cargo, optimizing efficiency and minimizing delays.'
             }
         ],
@@ -340,7 +340,7 @@ export const shipper = {
             },
             iconSrc: './shipper-icon-5.svg',
             iconAlt: 'Icon-5',
-            title: 'BID REQUEST MANAGEMENT',
+            title: 'Bid request managment',
             description: 'Choose the bid that best suits your requirements. Whether you opt to accept a bid or negotiate by making a counteroffer, enjoy the flexibility to make decisions that align with your shipping priorities.'
           },
         technologySection: {
@@ -441,19 +441,19 @@ export const bo = {
         description: "EusoTrip sets itself apart through several key factors",
         blocks: [
             {
-                title: 'Deep Industry Focus',
+                title: 'Deep industry focus',
                 iconSrc: './bo-icon-1.svg',
                 iconAlt: 'Icon 1',
                 content: 'Specialization in HazMat logistics ensures a platform that caters to the specific needs and challenges of this sector.'
             },
             {
-                title: 'Comprehensive User Ecosystem',
+                title: 'Comprehensive user ecosystem',
                 iconSrc: './bo-icon-2.svg',
                 iconAlt: 'Icon 1',
                 content: 'EusoTrip addresses the needs of all stakeholders, including carriers, suppliers, dispatchers, and even Pilot Drivers, fostering a collaborative and efficient environment.'
             },
             {
-                title: 'Cutting-Edge Technology',
+                title: 'Cutting-edge technology',
                 iconSrc: './bo-icon-3.svg',
                 iconAlt: 'Icon 3',
                 content: 'integration of advanced technologies like Esang AI and real-time data analytics optimizes operations and enhances efficiency.'
@@ -465,19 +465,19 @@ export const bo = {
         description: "Several factors create barriers to entry for new competitors in this space",
         blocks: [
             {
-                title: 'Industry Data Access',
+                title: 'Industry data access',
                 iconSrc: './bo-icon-4.svg',
                 iconAlt: 'Icon 4',
                 content: 'EusoTrips deep understanding of the HazMat logistics industry, coupled with access to crucial data, positions it strategically'
             },
             {
-                title: 'Technological Infrastructure',
+                title: 'Technological infrastructure',
                 iconSrc: './bo-icon-5.svg',
                 iconAlt: 'Icon 5',
                 content: 'The advanced technological foundation of EusoTrip creates a significant hurdle for new entrants to replicate.'
             },
             {
-                title: 'Network Effect',
+                title: 'Network effect',
                 iconSrc: './bo-icon-6.svg',
                 iconAlt: 'Icon 6',
                 content: 'EusoTrips established user base benefits from a network effect, creating further barriers for new players attempting to gain traction.'
@@ -489,19 +489,19 @@ export const bo = {
         description: "EusoTrip's technology-driven model prioritizes scalability, enabling growth without proportional cost increases",
         blocks: [
             {
-                title: 'Cloud-Based Infrastructure',
+                title: 'Cloud-based infrastructure',
                 iconSrc: './bo-icon-12.svg',
                 iconAlt: 'Icon 12',
                 content: 'The use of cloud-based solutions provides flexibility and adaptability in resources. This allows EusoTrip to efficiently scale its computing power, data storage, and network capabilities in line with increased user demand and operational growth.'
             },
             {
-                title: 'Automated Systems',
+                title: 'Automated systems',
                 iconSrc: './bo-icon-13.svg',
                 iconAlt: 'Icon 13',
                 content: ' Extensive automation of processes like load matching, compliance checks, and documentation reduces the need for manual interventions and additional operational overhead as the platform expands.'
             },
             {
-                title: 'Data-Driven Optimization',
+                title: 'Data-driven optimization',
                 iconSrc: './bo-icon-14.svg',
                 iconAlt: 'Icon 14',
                 content: 'Machine learning algorithms and data analytics continuously optimize route planning, load matching, and other key processes. This proactive optimization helps to accommodate expanding volumes without sacrificing efficiency.'
@@ -512,13 +512,13 @@ export const bo = {
         title: 'Long-term Vision',
         content: [
             {
-                title: 'Bulk Material Transport',
+                title: 'Bulk material transport',
                 iconSrc: './bo-icon-7.svg',
                 iconAlt: 'Icon 7',
                 content: 'EusoTrip could leverage its core competencies to optimize the transportation of non-hazardous bulk materials like construction materials, agricultural products, and more. This expansion opens potential new revenue streams while maintaining a specialized focus.',
             },
             {
-                title: 'Comprehensive Logistics Solutions',
+                title: 'Comprehensive logistics solutions',
                 iconSrc: './bo-icon-8.svg',
                 iconAlt: 'Icon 8',
                 content: 'Building on its platforms capabilities, EusoTrip could evolve into a comprehensive logistics solution provider, addressing diverse shipping needs and further increasing its overall value proposition within the industry.',
@@ -534,7 +534,7 @@ export const bo = {
         description: 'By providing comprehensive, data-driven insights and leveraging cutting-edge technology, EusoTrip is well-positioned to capitalize on the growing HazMat logistics market, offering significant returns for investors and stakeholders alike',
         blocks: [
             {
-                title: 'Cost-Efficient Growth',
+                title: 'Cost-efficient growth',
                 iconSrc: './bo-icon-9.svg',
                 iconAlt: 'Icon 9',
                 content: 'EusoTrips scalability model presents a significant advantage for investors. Expansion translates into increased revenue potential without a proportionally linear increase in operational costs'
@@ -546,7 +546,7 @@ export const bo = {
                 content: 'The platforms flexible foundation enables quick adaptation to changing market dynamics, evolving regulations, and future growth opportunities in new segments.'
             },
             {
-                title: 'Ambitious Vision',
+                title: 'Ambitious vision',
                 iconSrc: './bo-icon-11.svg',
                 iconAlt: 'Icon 11',
                 content: 'EusoTrips long-term goal to expand its service offerings demonstrates its dedication to continuous innovation and market expansion, solidifying its potential as a long-term value generator.'
