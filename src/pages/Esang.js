@@ -3,6 +3,7 @@ import { esang } from "../constants";
 import ContentBlock from "../components/ContentBlock";
 import ContentHeader from "../components/ContentHeader";
 import { CarouselTransition } from "../components/Carousel";
+import GradientBlock from "../components/GradientBlock";
 
 function Esang() {
   return (
@@ -16,6 +17,7 @@ function Esang() {
       <div className="flex flex-col p-10 w-full bg-black">
         <ContentBlock text={esang.header.content} />
       </div>
+      <GradientBlock />
       <div className="flex flex-col">
         <div className="flex flex-col h-full w-full bg-black order-1 md:order-1 ">
           <div className="flex h-full relative w-full flex-col md:flex-row md:items-start about-us-header-container stake-hoder-image-container justify-around p-10">

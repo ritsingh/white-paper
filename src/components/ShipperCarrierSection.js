@@ -4,6 +4,8 @@ import ContentBlock from "./ContentBlock";
 import { TwinStepwiseImages } from "./TwinImageStepper";
 import TwinContentBlock from "./TwinContentBlock";
 import { CarouselTransition } from "./Carousel";
+import GradientBlock from "./GradientBlock";
+
 
 function CarrierSection({ data, customBgClass = "about-us-header-container", bg = "bg-[url(../public/carrier-bg.png)]", bgText = "carrie-header w-[530px]", isCarrier=false }) {
   return (
@@ -14,23 +16,26 @@ function CarrierSection({ data, customBgClass = "about-us-header-container", bg 
           <span className={`md:text-3xl  ${isCarrier ? "w-[170px] md:w-full" : "w-100"  }   text-sm leading-80px font-Codec-Cold-Trial`}>{data.subTitle}</span>
         </div>
       </div>
-      <div className="flex flex-col p-10 w-full bg-black">
+      <div className="flex flex-col p-10 w-full">
         <ContentBlock text={data.header.content} />
       </div>
-      <div className="flex flex-col h-full w-full bg-black md:mt-[5rem] mt-2">
+      <GradientBlock classes={""} />
+      <div className="flex flex-col h-full w-full md:mt-[5rem] mt-2 relative">
         <ContentHeader additionClass="text-center " header={data.challenges.title} />
         <br />
-        <div className="flex md:flex-row flex-col h-full w-full bg-black md:p-10 px-8">
+        <div className="flex md:flex-row flex-col h-full w-full md:p-10 px-8">
           < TwinContentBlock columns={data.challenges.columns} />
         </div>
       </div>
-      <div className="flex flex-col h-full w-full bg-black">
+      <GradientBlock floatToLeft classes={"mt-[20%]"} />
+      <div className="flex flex-col h-full w-full relative">
         <div className="flex stretch bg-cover justify-center items-center">
           <ContentHeader additionClass="text-center" header={"Key Features"} />
         </div>
         <br />
       </div>
-      <div className="flex flex-wrap p-10 w-full bg-black">
+      <GradientBlock classes={"mt-[98%]"} />
+      <div className="flex flex-wrap p-10 w-full relative">
         <TwinStepwiseImages items={data.keyFeatures.imageBlock0} classes={isCarrier ? "order-2 md:order-2 md:mt-[5rem] mt-[2rem]" : "md:mt-[5rem] mt-[2rem]" } />
         <br />
         <TwinStepwiseImages items={data.keyFeatures.imageBlock} classes={isCarrier ? "order-3 md:order-3 md:mt-[5rem] mt-[2rem]" : " md:mt-[5rem] mt-[2rem]" } />
@@ -70,7 +75,7 @@ function CarrierSection({ data, customBgClass = "about-us-header-container", bg 
           <div className="flex flex-col md:w-[30%] w-full justify-center items-center text-center">
             <div className='mb-10 text-white text-left'>
               <div className="flex justify-center items-center text-left mb-4">
-                <h2 className="text-3xl text-xl font-bold">{data.keyFeatures.info.title}</h2>
+                <h2 className="md:text-3xl text-xl font-bold">{data.keyFeatures.info.title}</h2>
                 <img src={data.keyFeatures.info.iconSrc} alt={data.keyFeatures.info.iconAlt} className="w-20 h-20 ml-3 p-1" />
               </div>
               <img src={"./line-break.png"} className="pb-1 w-[55%]" />
@@ -81,7 +86,7 @@ function CarrierSection({ data, customBgClass = "about-us-header-container", bg 
 
         <br />
       </div>
-      <div className="flex flex-col h-full w-full bg-black md:mt-[5rem] mt-[2rem] ">
+      <div className="flex flex-col h-full w-full relative md:mt-[5rem] mt-[2rem] ">
         <div className="flex stretch bg-cover justify-center items-center">
           <ContentHeader additionClass="text-center" header={"Technlogy Stack"} />
         </div>

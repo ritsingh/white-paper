@@ -16,10 +16,10 @@ function TwinContentBlock({ columns }) {
       <div className=" w-full md:w-1/2 p-4 justify-center items-center">
         <ContentHeader additionClass="text-left" customFont="carrie-title-font" header={columns[0].title}/>
         <img src={"./line-break.png"} className="pb-1" />
-        <h2 className="text-white subtitle">{columns[0].subTitle}</h2>
+        <h2 className="text-white subtitle-font">{columns[0].subTitle}</h2>
         <br />
         <div className="flex items-center">
-              <div className="w-[1590px] content">
+              <div className="w-[1590px] content light-color">
                 <p>{getFormatedText(columns[0].content)}</p>
               </div>
         </div>
@@ -27,10 +27,10 @@ function TwinContentBlock({ columns }) {
       <div className=" w-full md:w-1/2 p-4 justify-center items-center">
         <ContentHeader additionClass="text-left " customFont="carrie-title-font"  header={columns[1].title}/>
         <img src={"./line-break.png"} className="pb-1" />
-        <h2 className="text-white subtitle">{columns[1].subTitle}</h2>
+        <h2 className="text-white subtitle-font">{columns[1].subTitle}</h2>
         <br />
         <div className="flex items-center">
-              <div className="w-[1590px] content">
+              <div className="w-[1590px] content light-color">
                 <p>{getFormatedText(columns[1].content)}</p>
               </div>
         </div>

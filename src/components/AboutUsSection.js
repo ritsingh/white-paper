@@ -6,6 +6,7 @@ import { CarouselTransition } from "./Carousel";
 import ContentBlockWithImage from "./ContentBlockWithImage";
 import { StepwiseImages } from "./ImageStepper";
 import { TwinStepwiseImages } from "./TwinImageStepper";
+import GradientBlock from "./GradientBlock";
 
 function AboutUs() {
   return (
@@ -48,28 +49,28 @@ function AboutUs() {
               className="stake-hoder-image  lg:h-[90vh]"
             />
           </div>
-                  
-        {/* Responsive Carousel */}
-        <CarouselTransition
-          classes={'p-10'}
-          items={[<img
-            src="./stakeholders-1.png"
-            alt="image 1"
-            className="h-[70vh] m-auto"
-          />,
-          <img
-            src="./stakeholders-2.png"
-            alt="image 2"
-            className="h-[70vh] m-auto"
-          />,
-          <img
-            src="./stakeholders-3.png"
-            alt="image 3"
-            className="h-[70vh] m-auto"
-          />]} />
+
+          {/* Responsive Carousel */}
+          <CarouselTransition
+            classes={'md:p-10 p-0'}
+            items={[<img
+              src="./stakeholders-1.png"
+              alt="image 1"
+              className="h-[70vh] m-auto"
+            />,
+            <img
+              src="./stakeholders-2.png"
+              alt="image 2"
+              className="h-[70vh] m-auto"
+            />,
+            <img
+              src="./stakeholders-3.png"
+              alt="image 3"
+              className="h-[70vh] m-auto"
+            />]} />
         </div>
 
-          
+
         <div className="px-10 md:py-10 z-10 md:mt-[-15%] mt-0">
           <br />
           <ContentBlock text={aboutUs.stakeholders.content1} />
@@ -78,7 +79,9 @@ function AboutUs() {
 
         </div>
       </div>
-      <div className="flex flex-wrap p-10 w-full bg-black items-start">
+      <GradientBlock floatToLeft classes="gradient-x " />
+
+      <div className="flex flex-wrap p-10 w-full items-start relative z-10">
         <ContentBlockWithImage
           title={aboutUs.introduction.title}
           text={`${aboutUs.introduction.content1}\n\n${aboutUs.introduction.content2}`}
@@ -87,20 +90,21 @@ function AboutUs() {
           commonPadding={"p-0"}
         />
       </div>
-      <div className="flex flex-wrap p-10 w-full bg-black">
+      <div className="flex flex-wrap p-10 w-full relative z-10">
         <ContentHeader additionClass="text-center" header={aboutUs.marketProblems.title} />
         <br />
         <StepwiseImages images={aboutUs.marketProblems.imageBlock1} />
         <StepwiseImages images={aboutUs.marketProblems.imageBlock2} />
       </div>
-      <div className="flex flex-wrap p-10 w-full bg-black">
+      <GradientBlock floatToLeft classes="gradient-x  md:mt-[-30%]" />
+      <div className="flex flex-wrap p-10 w-full relative">
         <ContentHeader additionClass="text-center" header={aboutUs.whatWeHave.title} />
         <ContentBlock w={"w-[100%] text-center subtitle"} text={aboutUs.whatWeHave.content2} />
         <br />
         <TwinStepwiseImages items={aboutUs.whatWeHave.imageBlock} />
         <br />
-
-        <div className="flex flex-row justify-start flex-wrap md:my-0 my-6 h-full relative w-full">
+        <GradientBlock floatToLeft classes={"gradient-x top-[30%]"} />
+        <div className="flex flex-row justify-start flex-wrap md:my-0 my-6 h-full relative z-10 w-full">
           <div class="crop-container w-[100%] md:w-[70%] ">
             <img
               src={aboutUs.whatWeHave.imageBlock2.src}
@@ -123,27 +127,29 @@ function AboutUs() {
           </div>
         </div>
         <br />
-        <TwinStepwiseImages classes="pt-0 md:pt-[5rem]" items={aboutUs.whatWeHave.imageBlock3} />
+        <GradientBlock floatToLeft classes={"gradient-x top-[53%]"} />
+        <TwinStepwiseImages classes="pt-0 md:pt-[5rem] relative z-10" items={aboutUs.whatWeHave.imageBlock3} />
         <br />
-        <TwinStepwiseImages items={aboutUs.whatWeHave.imageBlock4} />
+        <TwinStepwiseImages classes="relative z-10" items={aboutUs.whatWeHave.imageBlock4} />
+        <GradientBlock classes={"bottom-0"} />
         <br />
-        <TwinStepwiseImages items={aboutUs.whatWeHave.imageBlock5} />
+        <TwinStepwiseImages classes="relative z-10" items={aboutUs.whatWeHave.imageBlock5} />
         <br />
-        <div className="flex flex-col w-full bg-black">
+        <div className="flex flex-col w-full relative z-10 ">
           <ContentBlock text={aboutUs.whatWeHave.content1} />
         </div>
       </div>
-      <div className="flex flex-wrap p-10 w-full bg-black">
+      <div className="flex flex-wrap p-10 w-full relative z-10">
         <ContentHeader additionClass="text-center" header={aboutUs.exploreSection.title} />
         <br />
-        <div className="flex h-full relative w-full md:items-center justify-around flex-col md:flex-row py-8 md:p-10">
+        <div className="flex h-full relative z-10 w-full md:items-center justify-around flex-col md:flex-row py-8 md:p-10">
           <img
             src={aboutUs.forShipper.image.src}
             alt={aboutUs.forShipper.image.alt}
             className="h-full md:w-[50%] w-full  mr-10 object-cover"
           />
           <div className="text-left">
-            <div className={`w-full item-center title text-left`}>{aboutUs.forShipper.subscript}</div>
+            <div className={`w-full item-center title !text-left`}>{aboutUs.forShipper.subscript}</div>
             <div className={`w-full item-center shipper-txt`}>{aboutUs.forShipper.title}</div>
             <div className={`w-full item-center subtitle`}>{aboutUs.forShipper.description}</div>
           </div>
@@ -153,14 +159,15 @@ function AboutUs() {
             className="h-full md:w-[80%] w-full 0r-10 object-cover"
           /> */}
         </div>
-        <div className="flex h-full relative w-full md:items-center justify-around  flex-col md:flex-row-reverse py-8 md:p-10">
+        <GradientBlock classes={"top-[12%]"} />
+        <div className="flex h-full relative w-full  z-10  md:items-center justify-around  flex-col md:flex-row-reverse py-8 md:p-10">
           <img
             src={aboutUs.forCarrier.image.src}
             alt={aboutUs.forCarrier.image.alt}
             className="h-full md:w-[50%] w-full  pr-10 object-cover"
           />
           <div className="text-left">
-            <div className={`w-full item-center title text-left`}>{aboutUs.forCarrier.subscript}</div>
+            <div className={`w-full item-center title !text-left`}>{aboutUs.forCarrier.subscript}</div>
             <div className={`w-full item-center shipper-txt`}>{aboutUs.forCarrier.title}</div>
             <div className={`w-full item-center subtitle`}>{aboutUs.forCarrier.description}</div>
           </div>
@@ -170,14 +177,15 @@ function AboutUs() {
             className="h-full md:w-[80%] w-full mr-10 object-cover"
           /> */}
         </div>
-        <div className="flex h-full relative w-full md:items-center justify-around  flex-col md:flex-row py-8 md:p-10">
+        <GradientBlock floatToLeft classes={"bottom-[10%]"} />
+        <div className="flex h-full relative w-full  z-10  md:items-center justify-around  flex-col md:flex-row py-8 md:p-10">
           <img
             src={aboutUs.forPilot.image.src}
             alt={aboutUs.forPilot.image.alt}
             className="h-full md:w-[50%] w-full  mr-10 object-cover"
           />
           <div className="text-left">
-            <div className={`w-full item-center title text-left`}>{aboutUs.forPilot.subscript}</div>
+            <div className={`w-full item-center title !text-left`}>{aboutUs.forPilot.subscript}</div>
             <div className={`w-full item-center shipper-txt`}>{aboutUs.forPilot.title}</div>
             <div className={`w-full item-center subtitle`}>{aboutUs.forPilot.description}</div>
           </div>

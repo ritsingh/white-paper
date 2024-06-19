@@ -134,8 +134,6 @@ export const aboutUs = {
         title: "Shipper",
         description: "Supplier | Broker ",
         image: {
-            labelSrc: './for-shipper-label.png',
-            labelAlt: 'for-shipper-label',
             src: './for-shipper.png',
             alt: 'for-shipper'
         }
@@ -145,8 +143,6 @@ export const aboutUs = {
         title: "Carrier",
         description: "Dispatcher  | Company Carrier | Individual Carrier",
         image: {
-            labelSrc: './for-carrier-label.png',
-            labelAlt: 'for-carrier-label',
             src: './for-carrier.png',
             alt: 'for-carrier'
         }
@@ -156,8 +152,6 @@ export const aboutUs = {
         title: "Pilot",
         description: "Pilot Catalyst | Company Catalyst | Pilot Dispatcher ",
         image: {
-            labelSrc: './for-pilot-label.png',
-            labelAlt: 'for-pilot-label',
             src: './for-pilot.png',
             alt: 'for-pilot'
         }
@@ -303,7 +297,7 @@ export const shipper = {
             {
                 imageSrc: './shipper-image-3.png',
                 imageAlt: 'Image 3',
-                iconSrc: './shipper-icon-2.svg',
+                iconSrc: './bo-icon-15.svg',
                 iconAlt: 'Icon-2',
                 title: 'WAREHOUSE ADDRESS',
                 description: 'Streamlined Shipment Creation Simplify the shipment creation process by utilizing your warehouse addresses from  "My Facility Book." No need to enter address details manually each time; simply select the warehouse address you have added, saving time and reducing errors.'
@@ -435,7 +429,8 @@ export const bo = {
         imageSrc: './bo-market-oportunities-image.png',
         imageAlt: './bo-market-oportunities-image.png',
         contentTitle: 'EusoTrip and Market Segmentation',
-        contentText: 'EusoTrip positions itself strategically within the HazMat logistics landscape, particularly well-suited for segments involving commonly transported hazardous materials. These include flammable liquids, toxic solids, and corrosive materials, which represent a substantial portion of the U.S. HazMat transportation market. While the exact market size for these segments is still under development, industry trends suggest they hold significant potential, with these materials comprising over 60% of the U.S. HazMat logistics market​ (Export and Freight)​.\n\nThe rise of e-commerce is another crucial driver transforming the HazMat logistics landscape. This sector is expected to witness a surge in demand for solutions that handle smaller-quantity HazMat shipments efficiently and compliantly. E-commerce sales are projected to grow at a CAGR of 14.7%, significantly impacting the demand for specialized logistics solutions​ (Export and Freight)​. EusoTrips platform is designed to address these specific needs within the e-commerce ecosystem, providing a competitive edge in a rapidly evolving market.'
+        contentText: 'EusoTrip positions itself strategically within the HazMat logistics landscape, particularly well-suited for segments involving commonly transported hazardous materials. These include flammable liquids, toxic solids, and corrosive materials, which represent a substantial portion of the U.S. HazMat transportation market. While the exact market size for these segments is still under development, industry trends suggest they hold significant potential, with these materials comprising over 60% of the U.S. HazMat logistics market​ (Export and Freight).',
+        contentText1: ' The rise of e-commerce is another crucial driver transforming the HazMat logistics landscape. This sector is expected to witness a surge in demand for solutions that handle smaller-quantity HazMat shipments efficiently and compliantly. E-commerce sales are projected to grow at a CAGR of 14.7%, significantly impacting the demand for specialized logistics solutions​ (Export and Freight)​. EusoTrips platform is designed to address these specific needs within the e-commerce ecosystem, providing a competitive edge in a rapidly evolving market.'
     },
     painPoints: {
         title: 'Pain Points = Opportunity',
@@ -536,6 +531,7 @@ export const bo = {
     },
     contentBlock3: {
         title: 'Key Points for Investors',
+        description: 'By providing comprehensive, data-driven insights and leveraging cutting-edge technology, EusoTrip is well-positioned to capitalize on the growing HazMat logistics market, offering significant returns for investors and stakeholders alike',
         blocks: [
             {
                 title: 'Cost-Efficient Growth',
@@ -565,6 +561,8 @@ export const bo = {
         title: 'Business Model',
         description: 'Revenue road map',
         imageSrc: './bo-business-model-image.png',
+        imageSrc1: './bo-business-model-bg.png',
+        imageAlt1: 'bo-business-model-bg',
         imageAlt: 'Business Model',
     },
     eusotripAdvantage: {
@@ -580,21 +578,62 @@ export const bo = {
                 imageAlt: 'Image 1',
             },
             {
-                imageSrc: './bo-fina-projection-image-2.png',
-                imageAlt: 'Image 2',
+                title: "Operating Expenses",
+                imageSrc: './bo-fina-projection-icon-1.svg',
+                imageAlt: 'bo-fina-icon-1',
+                content : [
+                    {
+                    key: "Marketing & Customer Acquisition:",
+                    value: "$1M/year",
+                },
+                {
+                    key: "Technology & Development:",
+                    value: "$800K/year",
+                },
+                {
+                    key: "Operations & Support:",
+                    value: "$400K/year",
+                },
+                {
+                    key: "Miscellaneous:",
+                    value: "$200K/year",
+                }
+            ]
             }
         ],
         imageBlock1: [
             {
-                imageSrc: './bo-fina-projection-image-1.png',
-                imageAlt: 'Image 3',
+                imageSrc: './bo-fina-projection-image-2.png',
+                imageAlt: 'Image 2',
             },
             {
-                imageSrc: './bo-fina-projection-image-2.png',
-                imageAlt: 'Image 4',
+                title: "Profitability Estimates",
+                imageSrc: './bo-fina-projection-icon-2.svg',
+                imageAlt: 'bo-fina-icon-2',
+                content : [
+                    {
+                    key: "Tiered Subscription Model",
+                    value: "Introducing in Year 2 to diversify revenue streams.",
+                },
+                {
+                    key: "Strategic Partnerships",
+                    value: "Collaborating with industry leaders for mutual growth.",
+                },
+                {
+                    key: "Aggressive User Acquisition",
+                    value: "Focusing on transaction fees in the first two years to build a strong user base.",
+                }
+            ]
             }
+
         ],
         imageBlock2: [
+            {
+                imageSrc: './bo-fina-projection-image-3.png',
+                imageAlt: 'bo-fina-projection-image-3',
+            }
+        ],
+        imageBlock3: [
             {
                 imageSrc: './summary-table.png',
                 imageAlt: 'Image 5',

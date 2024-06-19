@@ -23,7 +23,7 @@ function Header() {
     window.addEventListener("scroll", handleScroll);
   }, []);
   return (
-    <>
+    <div className="flex justify-center">
       <div
         className={
           scroll
@@ -184,7 +184,7 @@ function Header() {
           <MobileNav selectedMenu={selectedMenu} showNav={showNav} setShowNav={setShowNav} setSelectedMenu={setSelectedMenu} />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

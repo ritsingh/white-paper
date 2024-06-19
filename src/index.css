@@ -3,12 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Codec Cold Trial';
-  src: url('../public/fonts/codec-cold-cufonfonts/Codec-Cold-Regular-trial.ttf') format('woff2');
-  /* Add other font properties if needed */
-}
-
-@font-face {
   font-family: 'codec pro bold';
   src: url('../public/fonts/codec-cold-cufonfonts/codec-pro-bold.ttf') format('woff2');
   /* Add other font properties if needed */
@@ -46,7 +40,7 @@ body::-webkit-scrollbar-thumb {
 
 body {
   color: #ffffff;
-  font-family: "Codec pro regular", "Gilroy-Regular";
+  font-family: "Codec pro regular";
   scrollbar-width: none;
   /* For Firefox */
   -ms-overflow-style: none;
@@ -126,6 +120,11 @@ body::-webkit-scrollbar {
   /* font-size: 25px; */
   font-size: 32px;
   color: rgba(255, 255, 255, 0.60);
+}
+
+.light-color {
+  color: rgba(255, 255, 255, 0.60);
+
 }
 
 .content-color {
@@ -268,16 +267,16 @@ body::-webkit-scrollbar {
 
 @media (min-width: 1280px) {
   .menu {
-    left: 20vw;
-    right: 20vw;
+    /* left: 20vw; */
+    /* right: 20vw; */
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   .menu {
-    left: 5vw;
-    right: 5vw;
-    width: 90vw !important;
+    /* left: 5vw; */
+    /* right: 5vw; */
+    /* width: 90vw !important; */
   }
 }
 
@@ -422,6 +421,10 @@ body::-webkit-scrollbar {
     align-items: center;
     top: 0;
   }
+
+  .gradient {
+    width: 90% !important;
+  }
 }
 
 .links-list li {
@@ -448,7 +451,8 @@ body::-webkit-scrollbar {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #FFFFFF; 
+    /* background: #FFFFFF;  */
+    background: #000000; 
   }
    
   /* Handle */
@@ -461,4 +465,14 @@ body::-webkit-scrollbar {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #315EFF; 
+  }
+
+  .gradient {
+    width: 60%;
+    position: absolute;
+  }
+
+  .gradient-x {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
   }
