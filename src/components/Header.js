@@ -41,7 +41,7 @@ function Header() {
       </span> */}
         <div className="w-full flex justify-center items-center text-white">
           <ul className="flex flex p-4 links-list">
-            <li className={`border-r border-gray-500 relative group w-max ${selectedMenu === 0 ? 'hazmat-label' : ''}`}>
+            <li className={`border-r border-gray-500 relative group w-max ${selectedMenu === 0 ? 'hazmat-label' : ''}`}  onClick={() => setSelectedMenu(0)}>
               <Link
                 to={"/"}
                 onClick={() => setSelectedMenu(0)}
@@ -63,10 +63,10 @@ function Header() {
 
               </Link>
             </li>
-            <li className={`border-r border-gray-500 relative group w-max ${selectedMenu === 1 ? 'hazmat-label' : ''}`}>
+            <li className={`border-r border-gray-500 relative group w-max ${selectedMenu === 1 ? 'hazmat-label' : ''}`}  onClick={() => setSelectedMenu(1)}>
               <Link
                 to={"/carrier"}
-                onClick={() => setSelectedMenu(1)}
+               
                 className="flex items-center justify-center cursor-pointer text-base lg:text-xl before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[0] before:bg-purple-500 group-hover:before:w-full"
               >
                 <span className="">Carrier</span>
@@ -84,10 +84,9 @@ function Header() {
                 }
             </Link>
             </li>
-            <li className={`border-r border-gray-500 relative group w-max ${selectedMenu === 2 ? 'hazmat-label' : ''}`}>
+            <li className={`border-r border-gray-500 relative group w-max ${selectedMenu === 2 ? 'hazmat-label' : ''}`} onClick={() => setSelectedMenu(2)}>
               <Link
                 to={"/esang"}
-                onClick={() => setSelectedMenu(2)}
                 className="flex items-center justify-center cursor-pointer text-base lg:text-xl  before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[0] before:bg-purple-500 group-hover:before:w-full"
               >
                 {selectedMenu === 2 ?
@@ -117,7 +116,7 @@ function Header() {
                 }
               </Link>
             </li>
-            <li className={`border-r border-gray-500 relative group w-max ${selectedMenu === 3 ? 'hazmat-label' : ''}`}>
+            <li className={`border-r border-gray-500 relative group w-max ${selectedMenu === 3 ? 'hazmat-label' : ''}`}  onClick={() => setSelectedMenu(3)}>
               <Link
                 to={"/shipper"}
                 onClick={() => setSelectedMenu(3)}
@@ -138,7 +137,7 @@ function Header() {
                 }
               </Link>
             </li>
-            <li className={`relative group w-max ${selectedMenu === 4 ? 'hazmat-label' : ''}`}>
+            <li className={`relative group w-max ${selectedMenu === 4 ? 'hazmat-label' : ''}`}  onClick={() => setSelectedMenu(4)}>
               <Link
                 to={"/business-overview"}
                 onClick={() => setSelectedMenu(4)}

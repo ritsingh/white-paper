@@ -411,7 +411,7 @@ function BusinessOverview() {
               alt={bo.financialProjection.imageBlock2[0].imageAlt}
               className="w-full md:w-[85%]"
             />
-            <div className="absolute content -rotate-90 md:left-[14%] bottom-[40%] left-[-27%]">Gross profit & Revenue (in million dollars)</div>
+            <div className="absolute content -rotate-90 md:left-[14%] bottom-[40%] left-[-27%]">Subscription Revenue ( in million dollars)</div>
           </div>
         </div>
         <div className="flex h-full flex-col relative w-full md:items-center stake-hoder-image-container justify-around p-5 md:p-10 z-10">

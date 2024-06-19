@@ -7,11 +7,11 @@ function Footer() {
   return (
     <React.Fragment>
       <img
-        className="md:pt-24 md:pt-0 m-auto z-[99] relative"
+        className=" md:z-0 z-[99] md:pt-24 md:pt-0 m-auto z-[99] relative"
         alt="footer-lin"
         src='./footer-line.png'
       />
-      <div className="z-[99] relative flex items-center justify-center md:justify-between text-white flex-wrap bottom-0 md:p-10 px-0 md:py-6 py-2 ">
+      <div className=" md:z-0 z-[99] relative flex items-center justify-center md:justify-between text-white flex-wrap bottom-0 md:p-10 px-0 md:py-6 py-2 ">
         <span className=" md:flex hidden items-center justify-center gap-10">
           <a
             href="/"
