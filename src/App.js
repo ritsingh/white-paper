@@ -8,7 +8,9 @@ import Carrier from "./pages/Carrier";
 import Shipper from "./pages/Shipper";
 import Esang from "./pages/Esang";
 import BusinessOverview from "./pages/BusinessOverview";
+
 function App() {
+
   return (
     <div className="bg-black from-slate-900 via-purple-900 to-slate-900">
       <img

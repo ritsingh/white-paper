@@ -158,12 +158,12 @@ function BusinessOverview() {
             </div>
           ))}
         </div>
-        <p className="content-color pt-6 md:px-10 px-8">{bo.contentBlock3.description}</p>
+        <p className="content-color pt-6 md:px-10 px-8 text-center">{bo.contentBlock3.description}</p>
       </div>
       <div className="flex flex-col h-full w-full p-10 relative">
         <ContentHeader additionClass="text-center" header={bo.competitiveAnalysis.title} />
         {/* <br /> */}
-        <ContentBlock text={bo.competitiveAnalysis.text} />
+        <ContentBlock w="w-[1590px] content text-center" text={bo.competitiveAnalysis.text} />
         <br />
         <div className="flex flex-col w-full justify-center items-center text-left md:mt-10 relative">
           <div className='mb-10 text-white flex items-start w-full justify-around md:flex-row flex-col'>
@@ -172,8 +172,8 @@ function BusinessOverview() {
               <div className="flex md:flex-row flex-col">
                 <img src={"./c-analysis-1.png"} alt={"c-analysis-1"} className="hidden md:flex w-40 h-[100%]" />
                 <img src={"./c-analysis-1-mob.png"} alt={"c-analysis-1"} className="md:hidden flex w-full" />
-                <div className="content-color">
-                  <ul className="px-5 list-disc">
+                <div className="content-color pl-4">
+                  <ul className="px-5 list-image-[url(../public/tick.svg)]">
                     <li>No Specialization</li>
                     <li>Basic Technology</li>
                     <li>Broad Market Focus</li>
@@ -186,8 +186,8 @@ function BusinessOverview() {
               <div className="flex md:flex-row flex-col">
                 <img src={"./c-analysis-2.png"} alt={"c-analysis-2"} className="hidden md:flex w-40 h-[100%]" />
                 <img src={"./c-analysis-2-mob.png"} alt={"c-analysis-2"} className="md:hidden flex w-full" />
-                <div className="content-color">
-                  <ul className="px-5 list-disc">
+                <div className="content-color pl-4">
+                  <ul className="px-5 list-image-[url(../public/tick.svg)]">
                     <li>Limited Expertise</li>
                     <li>Outdated Systems</li>
                     <li>Carrier-Centric</li>
@@ -196,7 +196,7 @@ function BusinessOverview() {
               </div>
               <div className="md:absolute relative w-full top-[70%] flex justify-end">
                 <p className="content-color md:w-[84%] w-full p-0 md:pl-[1vmax]">
-                  Legacy brokers often rely on traditional, manual methods that lack the efficiency and expertise required for HazMat logistics. General freight marketplaces, while offering broader logistics services, typically lack the specialized features and compliance tools crucial for safe and secure HazMat transportation. EusoTrip bridges this gap by providing a comprehensive platform specifically designed for the unique needs of the HazMat logistics industry.
+                  <b>Legacy brokers</b> often rely on traditional, manual methods that lack the efficiency and expertise required for HazMat logistics. General freight marketplaces, while offering broader logistics services, typically lack the specialized features and compliance tools crucial for safe and secure HazMat transportation. EusoTrip bridges this gap by providing a comprehensive platform specifically designed for the unique needs of the HazMat logistics industry.
                 </p>
               </div>
             </div>
@@ -205,9 +205,9 @@ function BusinessOverview() {
               <div className="flex md:flex-row flex-col">
                 <img src={"./c-analysis-3.png"} alt={"c-analysis-3"} className="hidden md:flex w-14" />
                 <img src={"./c-analysis-3-mob.png"} alt={"c-analysis-3"} className="md:hidden flex w-full" />
-                <div className="content-color ">
+                <div className="content-color">
                   <h2 className="hidden md:flex subtitle-font md:w-[60%] w-full text-white pl-5 pt-9">{"EusoTrip"}</h2>
-                  <ul className="px-5 pt-6 list-disc">
+                  <ul className="px-5 list-image-[url(../public/tick.svg)]">
                     <li>HazMat Specialization</li>
                     <li>Technology Integration</li>
                     <li>User Focus</li>
@@ -250,12 +250,12 @@ function BusinessOverview() {
 
             <div className="content-color w-[38%] pt-12">
               <ul className="px-8 list-disc flex flex-col justify-between h-[93vw]">
-                <li>Strategy: Rapidly onboard carriers and shippers Build trust through a user-friendly, transparent platform Secure strategic partnerships.</li>
+                <li>Strategy: Rapidly onboard carriers and shippers. Build trust through a user-friendly, transparent platform. Secure strategic partnerships.</li>
                 <li>Revenue Streams: Primary: 10% transaction fee per successful load match.</li>
-                <li>Strategy: Increase user engagement and retention Expand value proposition with premium features Explore targeted advertising opportunities.</li>
-                <li>Revenue Streams: Maintained: 10% transaction fee (across all tiers) New: Tiered subscriptions (Basic, Professional, Premium) Targeted advertising on the platform.</li>
-                <li>Strategy: · Solidify market leadership Leverage data insights for new revenue Expand into adjacent markets.</li>
-                <li>Revenue Streams: Maintained: · Transaction fees & subscriptions New: Monetized data insights and analytics Expansion into non-HazMat bulk transport Potential for additional logistics services.</li>
+                <li>Strategy: Increase user engagement and retention. Expand value proposition with premium features. Explore targeted advertising opportunities.</li>
+                <li>Revenue Streams: Maintained 10% transaction fee (across all tiers), New tiered subscriptions (Basic, Professional, Premium), Targeted advertising on the platform.</li>
+                <li>Strategy: Solidify market leadership. Leverage data insights for new revenue. Expand into adjacent markets.</li>
+                <li>Revenue Streams: Maintained transaction fees & subscriptions. New monetized data insights and analytics. Expansion into non-HazMat bulk transport. Potential for additional logistics services.</li>
               </ul>
             </div>
 
@@ -334,7 +334,7 @@ function BusinessOverview() {
         <div className="flex flex-col md:flex-row h-full relative w-full md:items-start stake-hoder-image-container justify-evenly p-5 md:p-10">
           {/* {bo.financialProjection.imageBlock.map((image, index) => ( */}
           <div className="md:w-[47%] w-full flex-col flex items-center ">
-            <h2 className="subtitle-font font-bold text-center w-full pb-6">Eusotrip 5 - Year Financial Projections</h2>
+            <h2 className="subtitle-font font-bold text-center w-full pb-6">Gross profit 5 year financial projections</h2>
             <div className="flex flex-col relative">
               <img
                 src={bo.financialProjection.imageBlock[0].imageSrc}
@@ -415,7 +415,7 @@ function BusinessOverview() {
           </div>
         </div>
         <div className="flex h-full flex-col relative w-full md:items-center stake-hoder-image-container justify-around p-5 md:p-10 z-10">
-          <h2 className="subtitle-font font-bold text-center w-full pb-1">Summary Table</h2>
+          <h2 className="subtitle-font font-bold text-center w-full pb-1">Operation Cost</h2>
           <div className="overflow-x-auto w-full flex justify-center">
             <img
               src={bo.financialProjection.imageBlock3[0].imageSrc}

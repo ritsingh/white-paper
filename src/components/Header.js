@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { RiGridFill } from "react-icons/ri";
 import { MdClose } from "react-icons/md";
 import MobileNav from "./MobileNav";
-import { WiDirectionUpRight, WiDirectionDownRight } from "react-icons/wi";
+// import { WiDirectionUpRight, WiDirectionDownRight } from "react-icons/wi";
 
 
 function Header() {
+  const location = useLocation();
+  const { hash, pathname, search } = location;
+
   const [showNav, setShowNav] = useState(false);
   const [scroll, setScrolled] = useState(false);
   const [selectedMenu, setSelectedMenu] = useState(0);
+
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 50) {
@@ -22,6 +26,36 @@ function Header() {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, []);
+
+  const handleTabSelect = (pathname) => {
+    switch (pathname) {
+      case "/carrier":
+        setSelectedMenu(1)
+        break;
+
+      case "/esang":
+        setSelectedMenu(2)
+        break;
+
+      case "/shipper":
+        setSelectedMenu(3)
+        break;
+
+      case "/business-overview":
+        setSelectedMenu(4)
+        break;
+    
+      default:
+        setSelectedMenu(0)
+        break;
+    }
+  } 
+
+  useEffect(() => {
+    handleTabSelect(pathname);
+  }, [pathname]);
+
+
   return (
     <div className="flex justify-center">
       <div
@@ -40,7 +74,7 @@ function Header() {
         </h1>
       </span> */}
         <div className="w-full flex justify-center items-center text-white">
-          <ul className="flex flex p-4 links-list">
+          <ul className="flex flex p-3 links-list">
             <li className={`border-r border-gray-500 relative group w-max ${selectedMenu === 0 ? 'hazmat-label' : ''}`}  onClick={() => setSelectedMenu(0)}>
               <Link
                 to={"/"}
@@ -93,12 +127,12 @@ function Header() {
                   (<img
                     src="./esang-sel.png"
                     alt="image 1"
-                    className="w-[33px] p-2"
+                    className="w-[33px] px-2"
                   />) :
                   (<img
                     src="./esang.png"
                     alt="image 1"
-                    className="w-[33px] p-2"
+                    className="w-[33px] px-2"
                   />)
                 }
                 <span className="">Esang</span>

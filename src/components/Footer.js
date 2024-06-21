@@ -61,7 +61,8 @@ function Footer() {
             </a>
           </span>
           <p className="md:text-sm text-xs text-center mt-2 md:m-2 md:pt-4 pt-1">
-            Copyright © Eusorone. Privacy policy
+            ©2024 Eusotrip. Privacy policy
+            {/* Copyright © Eusorone. Privacy policy */}
           </p>
 
         </div>

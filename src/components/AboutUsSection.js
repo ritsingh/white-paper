@@ -7,8 +7,10 @@ import ContentBlockWithImage from "./ContentBlockWithImage";
 import { StepwiseImages } from "./ImageStepper";
 import { TwinStepwiseImages } from "./TwinImageStepper";
 import GradientBlock from "./GradientBlock";
+import { useNavigate } from "react-router-dom";
 
 function AboutUs() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="bg-center bg-no-repeat w-full h-[110vh] relative bg-[url(../public/about-us-bg.png)] h-2/3 flex md:items-center about-us-header-container">
@@ -29,7 +31,7 @@ function AboutUs() {
         <div className="flex stretch bg-cover justify-center items-center">
           <ContentHeader additionClass="text-center" header={aboutUs.stakeholders.title} />
         </div>
-        <h2 className="text-center font-Codec-Cold-Trial subtitle text-white-60 z-10 px-4 md:px-10">EusoTrip offers targeted solutions for each key stakeholder </h2>
+        <h2 className="text-center font-Codec-Cold-Trial subtitle text-white-60 z-10 px-4 md:px-10">EusoTrip offers targeted solutions for each key stakeholder. </h2>
         <br />
         <div className=" bg-center bg-no-repeat h-full relative flex stake-hoder-image-bg bg-[url(../public/stakeholders-bg.png)] w-full md:items-center about-us-header-container stake-hoder-image-container justify-center p-10">
           <div className=" hidden lg:flex xl:flex flex justify-between w-[90%] lg:w-full">
@@ -150,7 +152,7 @@ function AboutUs() {
           />
           <div className="text-left">
             <div className={`w-full item-center title !text-left`}>{aboutUs.forShipper.subscript}</div>
-            <div className={`w-full item-center shipper-txt`}>{aboutUs.forShipper.title}</div>
+            <div className={`w-full item-center shipper-txt `} >{aboutUs.forShipper.title}</div>
             <div className={` item-center subtitle w-[70%]`}>{aboutUs.forShipper.description}</div>
           </div>
           {/* <img
@@ -168,7 +170,7 @@ function AboutUs() {
           />
           <div className="text-left">
             <div className={`w-full item-center title !text-left`}>{aboutUs.forCarrier.subscript}</div>
-            <div className={`w-full item-center shipper-txt`}>{aboutUs.forCarrier.title}</div>
+            <div className={`w-full item-center shipper-txt `} >{aboutUs.forCarrier.title}</div>
             <div className={`item-center subtitle w-[70%]`}>{aboutUs.forCarrier.description}</div>
           </div>
           {/* <img

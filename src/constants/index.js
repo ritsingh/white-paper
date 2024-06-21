@@ -103,7 +103,7 @@ export const aboutUs = {
                 iconSrc: './wwh-group-1-icon-6.svg',
                 iconAlt: 'Icon-4',
                 title: 'Reducing delays',
-                description: 'EusoTrip’s Esang AI-driven real-time planning and route optimization reduce idle time, ensure compliance with HazMat restrictions, and save carriers up to 20% on fuel  costs while cutting transit times by up to 15%'
+                description: 'EusoTrip’s Esang AI-driven real-time planning and route optimization reduce idle time, ensure compliance with HazMat restrictions, and save carriers up to 20% on fuel  costs while cutting transit times by up to 15%.'
             },
             {
                 imageSrc: './wwh-group-1-image-7.png',
@@ -132,7 +132,7 @@ export const aboutUs = {
     forShipper: {
         subscript: "For",
         title: "Shipper",
-        description: "Supplier | Broker ",
+        description: "Supplier | Marketer | Broker",
         image: {
             src: './for-shipper.png',
             alt: 'for-shipper'
@@ -254,9 +254,9 @@ export const carrier = {
 
 export const shipper = {
     title: 'Shipper',
-    subTitle: 'Supplier - Marketer | Broker',
+    subTitle: 'Supplier | Marketer | Broker',
     header: {
-        content: 'Our platform transforms the logistics landscape, offering a seamless and efficient way to transport goods. Whether you are a small business or a large enterprise, EusoTrip connects you to a vast network of trusted carriers and state-of-the-art technology, optimizing your supply chain. EusoTrip simplifies the shipping process with transparent pricing, real-time tracking, and effortless communication. By harnessing our technology, shippers can effortlessly book, track, and manage shipments, saving time and cutting costs. Join the community of shippers who rely on EusoTrip for safe and efficient delivery. Discover the future of freight logistics with EusoTrip – where shipping meets simplicity'
+        content: 'Our platform transforms the logistics landscape, offering a seamless and efficient way to transport goods. Whether you are a small business or a large enterprise, EusoTrip connects you to a vast network of trusted carriers and state-of-the-art technology, optimizing your supply chain. EusoTrip simplifies the shipping process with transparent pricing, real-time tracking, and effortless communication. By harnessing our technology, shippers can effortlessly book, track, and manage shipments, saving time and cutting costs. Join the community of shippers who rely on EusoTrip for safe and efficient delivery. Discover the future of freight logistics with EusoTrip – where shipping meets simplicity.'
     },
     challenges: {
         title: 'Challenges',
@@ -295,7 +295,7 @@ export const shipper = {
         ],
         imageBlock: [
             {
-                imageSrc: './shipper-image-3.png',
+                imageSrc: './carrier-image-1.png',
                 imageAlt: 'Image 3',
                 iconSrc: './bo-icon-15.svg',
                 iconAlt: 'Icon-2',
@@ -303,7 +303,7 @@ export const shipper = {
                 description: 'Streamlined Shipment Creation Simplify the shipment creation process by utilizing your warehouse addresses from  "My Facility Book." No need to enter address details manually each time; simply select the warehouse address you have added, saving time and reducing errors.'
             },
             {
-                imageSrc: './shipper-image-4.png',
+                imageSrc: './carrier-image-2.png',
                 imageAlt: 'Image 4',
                 iconSrc: './shipper-icon-4.svg',
                 iconAlt: 'Icon-4',
@@ -368,12 +368,12 @@ export const esang = {
     title: 'Esang',
     subTitle: 'Esang AI: The Heart of Optimization',
     header: {
-        content: 'EusoTrip leverages a suite of cutting-edge technologies to revolutionize the HazMat logistics industry. This technological edge ensures a seamless, efficient, and safe experience for all stakeholder'
+        content: 'EusoTrip leverages a suite of cutting-edge technologies to revolutionize the HazMat logistics industry. This technological edge ensures a seamless, efficient, and safe experience for all stakeholder.'
     },
     contentBlock1: [
         {
             title: 'Benefit (All Users)',
-            content: 'Specialized routing algorithms powered by Esang AI factor in real-time data and the latest HazMat regulations, ensuring safe, compliant, and fuel-efficient routes. This minimizes delays, fines, fuel costs, and maximizes earnings for carriers. Optimized routing can cut fuel costs by up to 15% and reduce transit times by 10-15%​ (Fleet Point)​​ (The Logistics Point)'
+            content: 'Specialized routing algorithms powered by Esang AI factor in real-time data and the latest HazMat regulations, ensuring safe, compliant, and fuel-efficient routes. This minimizes delays, fines, fuel costs, and maximizes earnings for carriers. Optimized routing can cut fuel costs by up to 15% and reduce transit times by 10-15%​ (Fleet Point)​​ (The Logistics Point).'
         },
         {
             title: 'Core Innovation',
@@ -419,7 +419,7 @@ export const bo = {
     title: 'Business Overview',
     subTitle: 'Vision',
     imageSrcArrow: './bo-vision-arrow.png',
-    visionCaption: 'Revolutionizing Hazmat Logistics: Safer, Smarter, Compliant',
+    visionCaption: 'Revolutionizing Hazmat Logistics: Safer, Smarter, Compliant.',
     header: {
         content: 'The global hazardous materials (HazMat) logistics market is a substantial and growing sector, currently valued at approximately $230.2 billion in 2022. This market is projected to grow significantly, reaching $311.27 billion by 2028 at a compound annual growth rate (CAGR) of 7.4%​ (ResearchHub)​​ (BlueWeave Consulting)​. The U.S. market alone represents a significant portion, estimated to be around $86.5 billion annually. This trajectory underscores the significant scale and ongoing expansion of HazMat transportation, driven by increasing regulatory requirements and the rising complexity of supply chains.'
     },
@@ -456,7 +456,7 @@ export const bo = {
                 title: 'Cutting-edge technology',
                 iconSrc: './bo-icon-3.svg',
                 iconAlt: 'Icon 3',
-                content: 'integration of advanced technologies like Esang AI and real-time data analytics optimizes operations and enhances efficiency.'
+                content: 'Integration of advanced technologies like Esang AI and real-time data analytics optimizes operations and enhances efficiency.'
             },
         ]
     },
@@ -537,7 +537,7 @@ export const bo = {
                 title: 'Cost-efficient growth',
                 iconSrc: './bo-icon-9.svg',
                 iconAlt: 'Icon 9',
-                content: 'EusoTrips scalability model presents a significant advantage for investors. Expansion translates into increased revenue potential without a proportionally linear increase in operational costs'
+                content: 'EusoTrips scalability model presents a significant advantage for investors. Expansion translates into increased revenue potential without a proportionally linear increase in operational costs.'
             },
             {
                 title: 'Adaptability',
