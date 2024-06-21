@@ -40,7 +40,7 @@ function CarrierSection({ data, customBgClass = "about-us-header-container", bg 
         <br />
         <TwinStepwiseImages items={data.keyFeatures.imageBlock} classes={isCarrier ? "order-3 md:order-3 md:mt-[5rem] mt-[2rem]" : " md:mt-[5rem] mt-[2rem]" } />
         <br />
-        <div className={`flex flex-col md:flex-row h-full relative w-full md:items-center stake-hoder-image-container justify-evenly ${isCarrier ? "order-1 md:order-1" : "" }}`}>
+        <div className={`flex flex-col md:flex-row h-full relative w-full md:items-center stake-hoder-image-container justify-evenly md:mt-[8rem] mt-[3rem] ${isCarrier ? "order-1 md:order-1" : "" }}`}>
           <div class="hidden lg:flex xl:flex">
             <img
               src={data.keyFeatures.info.image1.src}

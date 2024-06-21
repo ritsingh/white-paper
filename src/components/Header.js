@@ -61,8 +61,8 @@ function Header() {
       <div
         className={
           scroll
-            ? "w-fit hidden lg:flex xl:flex fixed bottom-space items-center justify-between px-4 z-50 bg-opacity-20 backdrop-blur-lg drop-shadow-lg shadow-lg menu"
-            : "w-fit hidden lg:flex xl:flex items-center justify-between px-4 z-50 fixed bottom-space menu"
+            ? "w-fit hidden lg:flex xl:flex md:flex fixed bottom-space items-center justify-between z-50 bg-opacity-20 backdrop-blur-lg drop-shadow-lg shadow-lg menu"
+            : "w-fit hidden lg:flex xl:flex md:flex items-center justify-between px-4 z-50 fixed bottom-space menu"
         }
       >
         {/* <span className="capitalize md:w-1/3 lg:w-1/2 flex items-center justify-center py-5 px-2 relative">
@@ -206,7 +206,7 @@ function Header() {
         </a> */}
         </div>
       </div>
-      <div className="mob-nav md:hidden flex">
+      <div className="mob-nav xl:hidden lg:hidden md:hidden flex">
         <img
           src="./logo.svg"
           alt="image 1"

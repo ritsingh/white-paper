@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
 }
 
 .menu {
-  background: rgb(64 64 64 / 70%);
+  background: rgb(64 64 64 / 40%);
   border-radius: 28px;
   font-size: 24px;
   font-style: normal;
@@ -305,17 +305,18 @@ body::-webkit-scrollbar {
 }
 
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+/* @media (max-width: 640px) { */
 
   .about-us-header-container {
     justify-content: center;
     text-align: center;
     background-size: cover;
-    margin-top: 15%;
+    margin-top: 35%;
     height: 85vh;
     background-position-x: 55%;
-    padding: 1rem 2rem;
-  }
+    padding: 0rem 2rem;
+    }
 
   .intro-bg {
     margin-top: 0;

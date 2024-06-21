@@ -15,7 +15,7 @@ function AboutUs() {
     <>
       <div className="bg-center bg-no-repeat w-full h-[110vh] relative bg-[url(../public/about-us-bg.png)] h-2/3 flex md:items-center about-us-header-container">
         {/* <div className="w-653px   about-us-header"> */}
-        <div className="p-10 m-0 about-us-header">
+        <div className="p-10 !-mt-8 about-us-header md:mt-0">
           <div className="text-white text-64px font-light leading-80px font-Codec-Cold-Trial tracking-tight label-codec">Brand New <br />Digital Map For<br /></div>
           <div className="text-6xl gradient-font font-bold leading-80px font-Codec-Cold-Trial tracking-tight label-codec">HazMat Logistics</div>
         </div>

@@ -135,7 +135,7 @@ function BusinessOverview() {
             <img
               src={bo.longTermVision.imageBlock.src}
               alt={bo.longTermVision.imageBlock.alt}
-              className="h-full w-auto h-[90vh]"
+              className="h-full w-auto"
             />
           </div>
         </div>
@@ -173,7 +173,7 @@ function BusinessOverview() {
                 <img src={"./c-analysis-1.png"} alt={"c-analysis-1"} className="hidden md:flex w-40 h-[100%]" />
                 <img src={"./c-analysis-1-mob.png"} alt={"c-analysis-1"} className="md:hidden flex w-full" />
                 <div className="content-color pl-4">
-                  <ul className="px-5 list-image-[url(../public/tick.svg)]">
+                  <ul className="px-5 list-disc">
                     <li>No Specialization</li>
                     <li>Basic Technology</li>
                     <li>Broad Market Focus</li>
@@ -187,7 +187,7 @@ function BusinessOverview() {
                 <img src={"./c-analysis-2.png"} alt={"c-analysis-2"} className="hidden md:flex w-40 h-[100%]" />
                 <img src={"./c-analysis-2-mob.png"} alt={"c-analysis-2"} className="md:hidden flex w-full" />
                 <div className="content-color pl-4">
-                  <ul className="px-5 list-image-[url(../public/tick.svg)]">
+                  <ul className="px-5 list-disc">
                     <li>Limited Expertise</li>
                     <li>Outdated Systems</li>
                     <li>Carrier-Centric</li>
