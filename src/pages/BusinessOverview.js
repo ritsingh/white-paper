@@ -117,7 +117,7 @@ function BusinessOverview() {
           <div className="md:w-[48%] w-full order-2 md:order-1 ">
             {bo.longTermVision.content.map((content, index) => (
               <div className="w-full py-4 justify-center items-center">
-                <div className="flex">
+                <div className="flex md:items-start items-center">
                   <h2 className="subtitle-font md:w-[50%] w-full font-bold">{content.title}</h2>
                   <img src={content.iconSrc} alt={content.iconAlt} className="w-20 h-20 ml-3 p-1" />
                 </div>
@@ -135,7 +135,7 @@ function BusinessOverview() {
             <img
               src={bo.longTermVision.imageBlock.src}
               alt={bo.longTermVision.imageBlock.alt}
-              className="h-full w-auto"
+              className="md:h-full w-auto h-auto"
             />
           </div>
         </div>
@@ -415,7 +415,8 @@ function BusinessOverview() {
           </div>
         </div>
         <div className="flex h-full flex-col relative w-full md:items-center stake-hoder-image-container justify-around p-5 md:p-10 z-10">
-          <h2 className="subtitle-font font-bold text-center w-full pb-1">Operation Cost</h2>
+          {/* <h2 className="subtitle-font font-bold text-center w-full pb-1">Operation Cost</h2> */}
+          <h2 className="subtitle-font font-bold text-center w-full pb-1">OPEX</h2>
           <div className="overflow-x-auto w-full flex justify-center">
             <img
               src={bo.financialProjection.imageBlock3[0].imageSrc}
